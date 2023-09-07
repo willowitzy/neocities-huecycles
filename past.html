@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PAST</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/png" href="img/candleholder/neodoor.png" />
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: '8 Bit Operator';
+        src: url(8BitOperator/8bitOperatorPlus-Bold.woff);
+      }
+      body {
+      background: #000000;
+      font-family: "8 Bit Operator";
+      font-size:18px;
+      color: #d6cfe6;
+      line-height: 150%;
+      }
+          </style>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class=wrapper>
+          <div class="flex-container">
+            <div><p style="text-align:center;"><div id="message">
+              </p></div></div></p>
+          </div>
+        <SCRIPT>
+          var pastMessages = [
+            "* These strings hurt my fingers!<br>I don't think I wanna learn anymore... Fahaha!<br><br><br>* Nonsense, I can get you a guitar pick!<br><br><br>* Still, I don't think I am cut out for this.<br><br><br>* If Asriel could teach me a little, then you're more<br>than capable. Now let's start over...",
+            "* Look at these funky glasses! I like the colors.<br><br><br>* Really? I think they look too tacky. And expensive!<br>Put that back.<br><br><br>* Aw!",
+            "* What did you think about the movie?<br><br><br>* The demon's design was off putting, but it was still scary.<br>He had a funny looking tail, though!<br><br><br>* You watch a horror movie and you only notice the<br>demon's tail? Pfft.<br><br><br>* Well, it sure didn't look like it was from a horror movie!",
+            "* Hey, imagine if I learned how to use a scythe!<br>Deadly baseball.<br><br><br>* That's way too dangerous. Mom won't like it.<br><br><br>* You know Mom melts at the sight of her daughters<br>smiling.<br><br><br>* Hey! Don't rope me into this!",
+            "<br><br><br><br><br><br>What are you looking for?"];
+
+            function temMessage(){
+              document.getElementById("message").innerHTML = pastMessages[Math.floor(pastMessages.length * Math.random())];
+            }
+
+            temMessage();
+
+            document.getElementById("temCont").addEventListener('click', function(){temMessage();}, true);
+        </SCRIPT>
+  </body>
+</html>

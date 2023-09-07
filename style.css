@@ -1,0 +1,194 @@
+@font-face {
+  font-family: '8 Bit Operator';
+  src: url(8BitOperator/8bitOperatorPlus-Bold.woff);
+}
+
+@font-face {
+  font-family: '8 Bit Operator Reg';
+  src: url(8BitOperator/8bitOperatorPlus-Regular.woff);
+}
+
+body {
+  background: #000000;
+  font-family: "8 Bit Operator Reg", "8 Bit Operator";
+  font-size:18px;
+  color: #d6cfe6;
+  line-height: 140%;
+  }
+
+.smooth {
+  image-rendering: smooth;
+}
+
+.high-quality {
+  image-rendering: high-quality;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+  
+a {
+    color: #74b9d0;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: #ffd35d;
+  }
+  
+.tiny {
+  font-size: 9px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+/*Everything in the main box goes in this*/
+.wrapper {
+  width: 1000px;
+  border: 3px solid black;
+  margin: 0 auto;
+  top: 0px;
+  }
+  
+.header {
+  background: black;
+  height: 130px;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+  overflow: hidden;
+  /*background: url("/img/logo_big.png"); /*Header image -- replace with your own!*/
+  /*background-size:contain;
+  background-repeat: no-repeat;*/
+  }
+  
+/*This and the header-title class are deprecated now that this style uses a background image for the header div.*/
+/*.header img {
+  display: block;
+  opacity: 0.35;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  }
+*/
+
+ /*If you want to use a smaller title or normal text, add .header p or .header h4 or whatever to the list*/
+.header h2, .header h3, .header h1 {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  border: 0px solid green;
+  margin: 3% auto; /*approx centered*/
+  opacity: 0.999999;
+}
+
+.links {
+  background: black;
+  padding: 10px;
+  border-bottom: 3px solid black;
+  text-align: center;
+  }
+  
+.links a {
+  color: white;
+  padding: 3px;
+  margin-left: 5px;
+  margin-right:5px;
+  font-size:24px;
+  font-family: "8 Bit Operator";
+  text-decoration: none;
+  }
+
+.links a:hover {
+  color: #ffd35d;
+  }
+
+h1 {
+  color: #946cea;
+}
+
+h2 {
+  color: #94949f;
+  font-size:30px;
+  font-family: "8 Bit Operator";
+}
+
+h3 {
+  color: #ffffff;
+  font-size:22px;
+  font-family: "8 Bit Operator";
+  font-weight: normal;
+}
+
+.main {
+  padding: 15px;
+  margin: 0 auto;
+  background: #000000;
+  }
+  
+/*Prevent overflow of large images in main text areas.*/
+.main img {
+  max-width: 100%;
+  height: auto;
+  }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.flex-container > div {
+  background-color: #000000;
+  margin: 30px;
+  padding: 0px;
+  font-size: 18px;
+}
+
+a img.hover {
+  display: none;
+}
+a img.default {
+  display: inherit;
+}
+a:hover img.hover {
+  display: inherit;
+}
+a:hover img.default {
+  display: none;
+}
+  
+.footer {
+  background: black;
+  padding: 20px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-top: 3px solid black;
+  font-size:15px;
+  font-family: "8 Bit Operator";
+  text-align: center;
+  }
+  
+  
+/*For narrow screens*/
+@media(max-width: 790px) {
+  .wrapper {
+    width: 95%;
+    }
+  .header h1, .header h2, .header h3 { /*Vertical centering gets wonky when the box is variable width*/
+    margin: 20% 5% auto;
+    }
+  }  
+
+/*Mobile compatibility*/
+@media(orientation: portrait) {
+  .wrapper {
+    width: 95%;}
+  .header {
+    height:230px;
+    }
+  .header h1, .header h2, .header h3 {
+    margin: 20% 3% auto;
+    }
+  }
