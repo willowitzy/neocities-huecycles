@@ -1,12 +1,21 @@
+/* fonts */
+
 @font-face {
   font-family: '8 Bit Operator';
-  src: url(8BitOperator/8bitOperatorPlus-Bold.woff);
+  src: url("/assets/fonts/8bitoperatorplus-bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: '8 Bit Operator Reg';
-  src: url(8BitOperator/8bitOperatorPlus-Regular.woff);
+  src: url("/assets/fonts/8bitoperatorplus-regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: 'Deltarune';
+  src: url("/assets/fonts/Deltarune.ttf") format("truetype");
+}
+
+/* stuff */
 
 body {
   background: #000000;
