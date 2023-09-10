@@ -18,12 +18,12 @@
 /* Fonts */
 @font-face {
     font-family: 'Deltarune';
-    src: url("/assets/fonts/Deltarune.ttf") format("truetype");
+    src: url("../assets/fonts/Deltarune.ttf") format("truetype");
 }
 
 @font-face {
     font-family: '8 Bit Operator';
-    src: url('/assets/fonts/8bitoperatorplus-regular.ttf') format('woff'), url('/assets/fonts/8bitoperatorplus-bold.ttf') format('woff');
+    src: url('../assets/fonts/8bitoperatorplus-regular.ttf') format('woff'), url('../assets/fonts/8bitoperatorplus-bold.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
