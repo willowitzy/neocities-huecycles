@@ -1,0 +1,179 @@
+/* Unique to main pages - Shouldn't apply to anything that isn't on the root folder */
+
+body {
+    font-family: "8 Bit Operator", sans-serif;
+    color: var(--font-color);
+}
+
+a {
+  color: var(--link-alt);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--link-alt);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: var(--link-hover);
+}
+a:hover {
+  color: var(--link-hover);
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+/* Everything in the main box goes in this */
+.wrapper {
+  width: 1000px;
+  border: 3px solid black;
+  margin: 0 auto;
+  top: 0px;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  /* Vertically center items */
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-container {
+  margin-top: 20px;
+}
+
+.logo-container img {
+  /* Center the image horizontally */
+  margin: 0 auto;
+}
+
+nav {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+  /* Spacing between links */
+  margin-bottom: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--link-alt);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: var(--link-hover);
+}
+
+main {
+    padding: 15px;
+    margin: 0 auto;
+    background: #000000;
+}
+    
+/*Prevent overflow of large images in main text areas.*/
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Image hover effect */
+a img.hover {
+    display: none;
+}
+  a img.default {
+    display: inherit;
+}
+  a:hover img.hover {
+    display: inherit;
+}
+  a:hover img.default {
+    display: none;
+}
+  
+.small-letters {
+    color: var(--faint-text);
+    font-size: var(--font-tiny);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.flex-container > div {
+    text-align: center;
+    margin: 50px;
+    padding: 0px;
+}
+
+.flex-container.projects-box {
+    /* Fixed width and height for both boxes */
+    width: 200px;
+    height: 200px; 
+}
+
+footer {
+    background-color: var(--background);;
+    padding: 20px;
+    font-weight: bold;
+    font-size:15px;
+    text-align: center;
+    /* border-top: 1px solid rgb(22, 22, 22); */
+  }
+    
+  /*For narrow screens*/
+  @media(max-width: 790px) {
+    .wrapper {
+      width: 95%;
+      }
+    header h1, header h2, header h3 { /*Vertical centering gets wonky when the box is variable width*/
+      margin: 20% 5% auto;
+      }
+    }  
+  
+  /*Mobile compatibility*/
+  @media(orientation: portrait) {
+    .wrapper {
+      width: 95%;}
+    header {
+      height:230px;
+      }
+    header h1, header h2, header h3 {
+      margin: 20% 3% auto;
+      }
+    }

@@ -2,96 +2,106 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Candleholder</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/png" href="/assets/img/candleholder/favicon.png" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="CANDLEHOLDER">
     <meta property="og:url" content="https://huecycles.com/candleholder">
     <meta property="og:description" content="A Deltarune fangame where Spamton keeps a candlelight safe.">
     <meta property="og:image" content="https://huecycles.com/assets/img/candleholder/char/candle_nael.png">
-    
+    <title>Candleholder</title>
+    <link rel="icon" type="image/png" href="/assets/img/candleholder/favicon.png" />
+    <!-- CSS -->
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/base.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/projects.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/candleholder.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
     <style>
     </style>
     
     <div class=wrapper>
-  
-    <div class=header>
+      <header>
+        <div class="logo-container">
+          <img class="image pixelated" src="/assets/img/candleholder/logo.png" alt="Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/projects.html">Return to Projects</a></li>
+            <li><a href="/candleholder/team.html">Meet the Team</a></li>
+            <li><a href="/candleholder/faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
       
-    <h1><img class="image pixelated" src="/assets/img/candleholder/logo.png"></h1>
-        
-    </div>
-      
-    <div class=links><a href="index.html">Home</a> <a href="/projects.html">Return to Projects</a> 
-      <a href="candleholder/team.html">Meet the Team</a> <a href="candleholder/faq.html">FAQ</a></div>
-      
-    <div class=main>
-
+    <main>
     <blockquote>
-    <p><em>"In the wake of the festival, the LIGHT looks to lull away their worries. The Delta Warriors, with all seven Shadow Crystals, decide it is time to finally guide these turbulent energies through the DARK.<br><br>
-    But purification never comes easy. A new, darker shadow looms over a Lightner's HOPE, snatching their willpower... and casting away those still waiting to find peace to a land of DREAMS.<br><br>
-    ...<br><br>
-    You are here too, right?<br><br>
-    Despite everything, you will just never learn to leave."</em></p>
+    <p class="italic">"In the wake of the festival, the LIGHT looks to lull away their worries. The Delta Warriors, with all seven Shadow Crystals, decide it is time to finally guide these turbulent energies through the DARK.<br><br>
+    But purification never comes easy. A new, darker shadow looms over a Lightner's HOPE, snatching their willpower... and casting away those still waiting to find peace to a land of DREAMS.
+    <br>
+    <br>
+    <p class="italic">...</p>
+    <br>
+    <p class="italic">You are here too, right?</p>
+    <br>
+    <p class="italic">Despite everything, you will just never learn to leave."</p>
     </blockquote>
 
     <div class="flex-container">
-      <div><a href="#characters">
+      <div>
+        <a href="#characters">
         <img class="default image pixelated" src="/assets/img/candleholder/fall_dark.gif">
         <img class="hover image pixelated" src="/assets/img/candleholder/fall_neodark.gif"/>
-        </a></div>
+        </a>
+      </div>
     </div>
     
     <br><hr><br>
 
-    <h2>About the Project</h2>
+    <h2 class="center">About the Project</h2>
+    <br>
     <p>Candleholder is a Deltarune fangame in early development. It is being programmed in <a href="https://kristal.cc/">Kristal</a>.</p>
     <p>You play as Spamton, who has fallen in a Neo Dark Fountain inside Kris's pocket, and now explores a strange, dreamy place called the Cluttersphere.</p>
     <p>With your perspective shifted, having Jevil as your ally (?) and being tasked with protecting Kris's lifeforce in the form of a candlelight, you must use the SOUL to guide Spamton into making it back to the Dark World safely.</p>
-    <p>...Oh, and <a href="candleholder/lancer.html">Lancer<img class="image pixelated" src="/assets/img/lancer_wave.gif" style="vertical-align:bottom"></a> is here too.</p>
+    <p class="center">...Oh, and <a href="/candleholder/lancer.html">Lancer<img class="image pixelated" src="/assets/img/lancer_wave.gif" style="vertical-align:bottom"></a> is here too.</p>
     <br><hr><br>
     
     <div id="characters">
-      <p style="text-align:center;"><h2>Characters</h2></p>
+      <p style="text-align:center;"><h2 class="center">Characters</h2></p>
           <div class="flex-container">
-            <div><p style="text-align:center;"><a href="candleholder/spamton.html">
+            <div><p style="text-align:center;"><a href="/candleholder/spamton.html">
               <img class="default image pixelated" src="/assets/img/candleholder/spamton.png">
               <img class="hover image pixelated" src="/assets/img/candleholder/spamton_hover.png"/>
               <br><span>Spamton</span></p>
               </a></div>
-            <div><p style="text-align:center;"><a href="candleholder/jevil.html">
+            <div><p style="text-align:center;"><a href="/candleholder/jevil.html">
               <img class="default image pixelated" src="/assets/img/candleholder/jevil.png">
               <img class="hover image pixelated" src="/assets/img/candleholder/jevil_hover.png"/>
               <br><span>Jevil</span></a></p>
             </a></div>
-            <div><p style="text-align:center;"><a href="candleholder/dess.html">
+            <div><p style="text-align:center;"><a href="/candleholder/dess.html">
               <img class="default image pixelated" src="/assets/img/candleholder/dess.png">
               <img class="hover image pixelated" src="/assets/img/candleholder/dess_hover.png"/>
               <br><span>Dess Holiday</span></a></p>
             </a></div>
           </div>
           <div class="flex-container">
-            <div><p style="text-align:center;"><a href="candleholder/dealmaker.html">
+            <div><p style="text-align:center;"><a href="/candleholder/dealmaker.html">
               <img class="default image pixelated" src="/assets/img/candleholder/dealmaker.png">
               <img class="hover image pixelated" src="/assets/img/candleholder/dealmaker_2.gif"/>
               <br><span>Dealmaker</span></a></p>
             </a></div>
-            <div><p style="text-align:center;"><a href="candleholder/devilsknife.html">
+            <div><p style="text-align:center;"><a href="/candleholder/devilsknife.html">
               <img class="default image pixelated" src="/assets/img/candleholder/devilsknife.png">
               <img class="hover image pixelated" src="/assets/img/candleholder/devilsknife_blink.gif"/>
               <br><span>Devilsknife</span></a></p>
             </a></div>
-            <div><p style="text-align:center;"><a href="candleholder/risku.html">
+            <div><p style="text-align:center;"><a href="/candleholder/risku.html">
               <img class="default image pixelated" src="/assets/img/candleholder/risku.png">
               <img class="hover image pixelated" src="/assets/img/candleholder/risku_2.png"/>
               <br><span>Risku</span></a></p>
             </a></div>
-            <div><p style="text-align:center;"><a href="candleholder/nataline.html">
+            <div><p style="text-align:center;"><a href="/candleholder/nataline.html">
               <img class="default image pixelated" src="/assets/img/candleholder/nataline.png">
               <img class="hover image pixelated" src="/assets/img/candleholder/nataline_2.png"/>
               <br><span>Nataline</span></a></p>
@@ -100,8 +110,8 @@
         </div></p>
       <br><hr><br>
     
-    <h2>Other Links</h2>
-
+    <h2 class="center">Other Links</h2>
+    <br>
     <p>
       <div class="flex-container">
       <a href="https://candleholder-dev.tumblr.com/">
@@ -120,12 +130,14 @@
         <img class="default image pixelated" src="/assets/img/candleholder/gamejolt.png" width="82" height="64">
         <img class="hover image pixelated" src="/assets/img/candleholder/gamejolt_2.png" width="82" height="64"/>
       </a>
-    </div>
-    </div>
-    <br>
-    <div class=footer><span style="color: #625f6a;">HUECYCLES © 2020 - 2023<br>UNDERTALE/DELTARUNE belongs to Toby Fox & his team.<br>These are just projects for fun!</span></div>
-    <br>  
-  </div>
+    </div> <!-- End of .flex-container -->
+
+  </main> <!-- End of .main -->
+
+    <footer>
+      <span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023<br>UNDERTALE/DELTARUNE belongs to Toby Fox & his team.<br>These are just projects for fun!</span>
+    </footer>
     
+    </div> <!-- End of .wrapper -->
   </body>
 </html>

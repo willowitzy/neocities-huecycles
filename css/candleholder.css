@@ -1,0 +1,15 @@
+/* Candleholder unique styles here */
+.lancer {
+    margin: 5px 0;
+}
+
+.lancer p {
+    margin-top: 20px;
+}
+.lancer p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.by-text {
+    color: var(--faint-text);
+}

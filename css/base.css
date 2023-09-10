@@ -1,0 +1,89 @@
+/* CSS Variables - Colors & Sizing */
+:root {
+    --background: #000000;
+    --h1: #946cea;
+    --h2: #94949f;
+    --h3: #ffffff;
+    --link-default: #ffffff;
+    --link-alt: #74b9d0;
+    --link-hover: #ffd35d;
+    --font-color: #d6cfe6;
+    --faint-text: #625f6a;
+    --textarea: #2c2530;
+    --textarea-border: #e7d9d9;
+    --font-tiny: 80%;
+    --font-very-tiny: 50%;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Deltarune';
+    src: url("/assets/fonts/Deltarune.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '8 Bit Operator';
+    src: url('/assets/fonts/8bitoperatorplus-regular.ttf') format('woff'), url('/assets/fonts/8bitoperatorplus-bold.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Other Generic Styles - Applies to ALL */
+body {
+    background-color: #000000;
+    /* sans-serif is the fall back font */
+    line-height: 140%;
+    /* image-rendering: pixelated; */
+}
+
+p { 
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+h1 {
+    color: var(--h1);
+    font-size:40px;
+    margin-top: 25;
+    margin-bottom: 25;
+    font-weight: bold;
+}
+  
+h2 {
+    color: var(--h2);
+    font-size:30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+  
+h3 {
+    color: var(--h3);
+    font-size:22px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}  
+
+.container {
+    display: inline;
+    padding-right: 6%;
+    padding-left: 6%;
+}

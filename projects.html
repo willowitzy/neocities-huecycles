@@ -2,45 +2,61 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>HUE'S VICIOUS CYCLE</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/png" href="/assets/img/favicon2.png" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <meta property="og:title" content="HUE'S VICIOUS CYCLE">
     <meta property="og:url" content="https://huecycles.com/">
     <meta property="og:description" content="Is there such a thing as a color coded brain?">
     <meta property="og:image" content="https://huecycles.com/assets/img/brainrot.png">
-    
+    <title>HUE'S VICIOUS CYCLE</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon2.png" />
+    <!-- CSS -->
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/base.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/huesite.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-    <style>
-    </style>
     
     <div class=wrapper>
-      <h2 style="text-align:center;"><br><br><br><br>Where will you go?</h2>
-      <p style="text-align:center;">CHOOSE.</p>
+      
+      <main>
+      <div class="title">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="center">Where will you go?</h2>
+      </div>
+
+      <p class="center">CHOOSE.</p>
         <div class="flex-container">
-          <div><p style="text-align:center;"><a href="/andromedia.html">
-            <img class="default image pixelated" src="/assets/img/andromedia/cd.png" width="134" height="108">
-            <img class="hover image pixelated" src="/assets/img/andromedia/cd_shooting_star.png" width="134" height="108"/>
-            <br><span>ANDROMEDIA<br>Deltarune Chapters</span></p>
+          <div class="projects-box">
+            <a href="/andromedia.html">
+              <img class="default image pixelated" src="/assets/img/andromedia/cd.png" width="134" height="108">
+              <img class="hover image pixelated" src="/assets/img/andromedia/cd_shooting_star.png" width="134" height="108"/>
+              <p class="center">ANDROMEDIA<br>Deltarune Chapters</p>
             </a>
           </div>
-          <div><p style="text-align:center;"><a href="/candleholder.html">
-            <img class="default image pixelated" src="/assets/img/candle_out.png">
-            <img class="hover image pixelated" src="/assets/img/candle_glow.png"/>
-            <br><span>Candleholder</span></a></p>
-          </a></div>
+          <div class="projects-box">
+              <p class="center">
+                <a href="/candleholder.html">
+                  <img class="default image pixelated" src="/assets/img/candle_out.png">
+                  <img class="hover image pixelated" src="/assets/img/candle_glow.png"/>
+                  <br>
+                  <span>Candleholder</span>
+              </p>
+            </a>
+          </div>
         </div>
-        <p style="text-align:center;"><a href="index.html"><font style="font-family:'8 Bit Operator'">RETURN</font></a>
+        <!-- End of .flex-container -->
+        <p class="center ">
+          <a href="/index.html">RETURN</a>
       </p>
-    </div>
-
-    <div class=footer><span style="color: #625f6a;">HUECYCLES © 2020 - 2023<br>UNDERTALE/DELTARUNE belongs to Toby Fox & his team.<br>These are just projects for fun!</span></div>
-    </div>
+    </main>
+      </div>
+      <!-- End of .wrapper -->
+    <footer>
+      <span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023<br>UNDERTALE/DELTARUNE belongs to Toby Fox & his team.<br>These are just projects for fun!</span></div>
+    </footer>
     
   </body>
 </html>
