@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>* A lone TV.</title>
-    <link rel="icon" type="image/png" href="/assets/img/andromedia/favicon_3.png"/>
+    <link rel="icon" type="image/png" href="../../assets/img/andromedia/favicon_3.png"/>
     <!-- CSS -->
-    <link href="/css/reset.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/base.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/projects.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/andromedia.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/base.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/projects.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body class="halojack-page">
     <div class="wrapper">
@@ -18,11 +18,11 @@
         <div id="imgtip"></div>
         <img
           id="img1"
-          src="/assets/img/metropolis/tv_off.png"
+          src="../../assets/img/metropolis/tv_off.png"
           width="216"
           height="224"
           alt="A TV"
-          onclick="imgChange(this, '/assets/audio/hijack.ogg');"
+          onclick="imgChange(this, '../../assets/audio/hijack.ogg');"
           style="cursor: pointer;"
         />
       </div>
@@ -33,7 +33,7 @@
       function imgChange(el,soundfile)
       {
       document.getElementById("over").style.display="block";
-      document.getElementById("img1").src="/assets/img/metropolis/tv_static.gif";
+      document.getElementById("img1").src="../../assets/img/metropolis/tv_static.gif";
           if (el.mp3) {
           if(el.mp3.paused) el.mp3.play();
           else el.mp3.pause();
@@ -44,8 +44,8 @@
       setTimeout(function() {
       document.getElementById("over").style.display="none";
       document.title = '* GOInG SOmEWHERE??';
-      document.querySelector("link[rel*='icon']").href = "/assets/img/metropolis/haloeye.png";
-      document.getElementById("img1").src="/assets/img/metropolis/tv_halojack.gif";
+      document.querySelector("link[rel*='icon']").href = "../../assets/img/metropolis/haloeye.png";
+      document.getElementById("img1").src="../../assets/img/metropolis/tv_halojack.gif";
       }, 2000);
       }
   </script>
