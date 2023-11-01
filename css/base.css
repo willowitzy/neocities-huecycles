@@ -23,7 +23,14 @@
 
 @font-face {
     font-family: '8 Bit Operator';
-    src: url('../assets/fonts/8bitoperatorplus-regular.ttf') format('woff'), url('../assets/fonts/8bitoperatorplus-bold.ttf') format('woff');
+    src: url('../assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '8 Bit Operator Bold';
+    src: url('../assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,6 +40,7 @@ body {
     background-color: #000000;
     /* sans-serif is the fall back font */
     line-height: 140%;
+    text-rendering: pixelated;
     /* image-rendering: pixelated; */
 }
 
@@ -64,6 +72,7 @@ h1 {
     margin-top: 25;
     margin-bottom: 25;
     font-weight: bold;
+    font-family: '8 Bit Operator Bold';
 }
   
 h2 {
@@ -72,6 +81,7 @@ h2 {
     margin-top: 25px;
     margin-bottom: 25px;
     font-weight: bold;
+    font-family: '8 Bit Operator Bold';
 }
   
 h3 {
@@ -80,6 +90,7 @@ h3 {
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 25px;
+    font-family: '8 Bit Operator Bold';
 }  
 
 .container {

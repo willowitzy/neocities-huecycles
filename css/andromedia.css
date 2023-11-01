@@ -4,11 +4,12 @@ body {
   background-color: var(--background);
 }
 
+/* ------------ NICK STYLES ------------ */
 body.nick-page {
   background-color: #0c0b14;
 }
 
-/* ------------ NICK STYLES ------------ */
+/* ------------ HALOJACK STYLES ------------ */
 body.halojack-page {
     image-rendering: pixelated;
     display: flex;
@@ -18,7 +19,6 @@ body.halojack-page {
     margin: 0;
 }
 
-/* ------------ HALOJACK STYLES ------------ */
 #img {
     /* Centering the TV on the screen */
     position: relative;
