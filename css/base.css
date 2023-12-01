@@ -11,6 +11,7 @@
     --faint-text: #625f6a;
     --textarea: #2c2530;
     --textarea-border: #e7d9d9;
+    --font-big: 200%;
     --font-tiny: 80%;
     --font-very-tiny: 50%;
 }
@@ -31,6 +32,13 @@
 @font-face {
     font-family: '8 Bit Operator Bold';
     src: url('../assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EASy Text';
+    src: url('../assets/fonts/easytext.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

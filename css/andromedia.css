@@ -19,6 +19,33 @@ body.halojack-page {
     margin: 0;
 }
 
+body.eas-page {
+  background-color: #0040ff;
+  font-family: "EASy Text";
+  color: #ffffff;
+  image-rendering: pixelated;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.static {
+  top:0px;
+  left:0px;
+  position: fixed;
+  height:100%;
+  width:100%;
+  background-image: url("../assets/img/static.gif");
+  background-repeat: repeat;
+  background-size: cover;
+  pointer-events: none;
+  opacity: 0.05;
+  filter: brightness(8);
+  z-index: 100;
+}
+
 #img {
     /* Centering the TV on the screen */
     position: relative;
