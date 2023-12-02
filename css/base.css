@@ -21,7 +21,7 @@
     --cursor-pointer-alt: url(../assets/img/heart_yellow_break.png) 2 0, auto;
     --text-shadow: 2px 2px #0f0f71;
     --text-shadow-hover: 2px 2px #710f57;
-    --text-shadow-footer: 2px 2px #1b1b1b;
+    --text-shadow-footer: 2px 2px #333333;
     --border-color: #0f0f71;
 }
 
@@ -64,6 +64,11 @@ body {
     text-rendering: pixelated;
     font-family: var(--font);
     font-weight: normal;
+    text-shadow: var(--text-shadow);
+}
+
+a:hover {
+    text-shadow: var(--text-shadow-hover);
 }
 
 p { 
