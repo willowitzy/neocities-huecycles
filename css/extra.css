@@ -1,7 +1,14 @@
+/* Dess Blog */
+
 #hplays {
     font-family: "Arial", Arial, sans-serif;
     width: 100%;    text-align: center;
     color: #ffffff;
+}
+
+#hplays p a {
+    text-decoration: underline;
+    color: #5f5fff;
 }
 
 body {
@@ -34,9 +41,4 @@ body {
 #banner {
     max-width: 100%;
     object-fit: contain;
-}
-
-#hplays p a {
-    text-decoration: underline;
-    color: #5f5fff;
 }
