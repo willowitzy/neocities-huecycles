@@ -16,6 +16,10 @@
     --font-very-tiny: 50%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* Fonts */
 @font-face {
     font-family: 'Deltarune';

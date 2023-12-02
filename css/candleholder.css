@@ -1,4 +1,5 @@
 /* Candleholder unique styles here */
+
 .lancer {
     margin: 5px 0;
 }
@@ -13,3 +14,57 @@
 .by-text {
     color: var(--faint-text);
 }
+
+.flex-item {
+    display: flex;
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    justify-content: center;
+    /* flex: 0 0 calc(33.33% - 20px);  */
+    /* Three items per row */
+}
+
+.dessholiday {
+    padding-left: 20%;
+}
+
+/* ----------------------- Mobile compatibility ----------------------- */
+
+/* Medium screens (tablets) */
+@media(max-width: 790px) {
+    .wrapper {
+        margin: 0;
+        /* border: 3px solid rgb(255, 0, 0); */
+        /* margin: 0 auto; */
+        /* top: 0px; */
+    }
+
+    /* Comment this selector for one item per row */
+    .flex-container > div {
+        margin: 0px; 
+        padding: 0px;
+    }
+
+    .flex-item {
+        /* Two items per row */   
+        flex: 0 0 calc(50% - 20px);  /* Even numbers... >:( */
+    }
+}  
+  
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .flex-container {
+        /* Stack items vertically */
+        flex-direction: column; 
+    }
+
+    .flex-item {
+        /* Make each item take the full width */
+        width: 100%; 
+    }
+}
+
+/* 
+@media(orientation: portrait) {} 
+*/

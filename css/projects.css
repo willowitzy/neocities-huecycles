@@ -32,14 +32,6 @@ a:hover {
   text-align: center;
 }
 
-/* Everything in the main box goes in this */
-.wrapper {
-  width: 1000px;
-  /*border: 3px solid black;*/
-  margin: 0 auto;
-  top: 0px;
-}
-
 header {
   background-color: black;
   display: flex;
@@ -94,21 +86,21 @@ main {
 }
   
 /*Prevent overflow of large images in main text areas.*/
-main img {
+/* main img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   justify-content: center;
-  align-items: center;
   background-color: var(--background);
 }
 
+/* Styles for individual items in the flex container */
 .flex-container > div {
-  /* text-align: center; */
-  margin: 50px;
+  margin: 30px; /* Before (with more spacing): 50px */
   padding: 0px;
 }
 
@@ -132,27 +124,13 @@ footer {
   font-weight: bold;
   font-size:15px;
   text-align: center;
-  /* border-top: 1px solid rgb(22, 22, 22); */
+  /* border-top: 1px solid rgb(22, 22, 22); */ /* Can use this instead of <hr> */
 }
-  
-/*For narrow screens*/
-@media(max-width: 790px) {
-  .wrapper {
-    width: 95%;
-    }
-  header h1, header h2, header h3 { /*Vertical centering gets wonky when the box is variable width*/
-    margin: 20% 5% auto;
-    }
-  }  
 
-/*Mobile compatibility*/
-@media(orientation: portrait) {
-  .wrapper {
-    width: 95%;}
-  header {
-    height:230px;
-    }
-  header h1, header h2, header h3 {
-    margin: 20% 3% auto;
-    }
-  }
+/* Everything in the main box goes in this */
+.wrapper {
+  /* border: 2px solid rgba(247, 0, 255); */
+  max-width: 100%;
+  margin: 0 auto;
+  top: 0px;
+}
