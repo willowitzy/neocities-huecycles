@@ -20,16 +20,16 @@ body.halojack-page {
 }
 
 body.eas-page {
-	background-color: #0040ff;
-	text-shadow: -2px 3px 5px #ea94ff, 2px 1px 5px rgba(104, 71, 122,0.9);
-	font-family: "EASy Text";
-	color: #ffffff;
-	image-rendering: pixelated;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
+  background-color: #0034ce;
+  font-family: "EASy Text";
+  color: #ffffff;
+  text-shadow: -2px 3px 5px #ea94ff, 2px 1px 5px rgba(104, 71, 122,0.9);
+  image-rendering: pixelated;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .static {
