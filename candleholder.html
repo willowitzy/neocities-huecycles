@@ -44,15 +44,18 @@
     <p class="italic">Despite everything, you will just never learn to leave."</p>
     </blockquote>
 
-    <div class="flex-container">
-      <div>
-        <a href="#characters">
-        <img class="default image pixelated" src="assets/img/candleholder/fall_dark.gif">
-        <img class="hover image pixelated" src="assets/img/candleholder/fall_neodark.gif"/>
-        </a>
+    <!-- Spamvil animated fall toggle -->
+    <section class="spamvil-anim">
+      <div class="flex-container">
+        <div>
+          <a href="#characters" id="character-link">
+          <img id="character-img" class="default image pixelated" src="assets/img/candleholder/fall_dark.gif"> <!-- default -->
+          <img id="character-img-hover" class="hover image pixelated" src="assets/img/candleholder/fall_neodark.gif"/> <!-- hover -->
+          </a>
+        </div>
       </div>
-    </div>
-    
+    </section>
+
     <br><hr><br>
 
     <h2 class="center">About the Project</h2>
@@ -71,7 +74,7 @@
             <!-- Spamton -->
             <div class="flex-item">
               <a href="candleholder/spamton.html">
-                <img class="default image pixelated" src="assets/img/candleholder/spamton.png"/>
+                <img class="default image pixelated" src="assets/img/candleholder/spamton.png"/> 
                 <img class="hover image pixelated" src="assets/img/candleholder/spamton_hover.png"/>
                 <p class="center">Spamton</p>
               </a>
@@ -165,5 +168,65 @@
     </footer>
     
     </div> <!-- End of .wrapper -->
+
+    <!-- JS toggle to swap animations after the user clicks the images -->
+    <script>
+		// Ensures the script doesn't run until the HTML document has been fully loaded
+        document.addEventListener("DOMContentLoaded", function() {
+			var characterLink = document.getElementById("character-link");
+			var characterImg = document.getElementById("character-img");
+			var characterImgHover = document.getElementById("character-img-hover");
+
+        	// Check if the device is a touchscreen
+			var isTouchDevice = 'ontouchstart' in document.documentElement;
+			var isToggled = false;
+
+          	function toggleImages() {
+				var tempSrc = characterImg.src;
+				characterImg.src = characterImgHover.src;
+				characterImgHover.src = tempSrc;
+				isToggled = !isToggled;
+          	}
+
+			// Click or touchstart event handler
+			function clickHandler(event) {
+				toggleImages();
+
+				if (isTouchDevice) {
+					// Prevent default behavior on touch devices
+					event.preventDefault();
+				}
+			}
+
+			// Event listeners
+			if (isTouchDevice) {
+				console.log("Device uses touch.");
+				// For touch devices, 'touchstart' and 'pointerdown' events
+				characterLink.addEventListener("touchstart", clickHandler);
+				characterLink.addEventListener("pointerdown", function (event) {
+					// Check if the pointer is a touch input
+					if (event.pointerType === "touch") {
+						event.preventDefault();
+					}
+				});
+			} else { // PC
+				console.log("Device doesn't use touch.");
+				// For non-touch devices, 'click' and 'mouseenter' events
+				characterLink.addEventListener("click", clickHandler);
+
+				characterLink.addEventListener("mouseenter", function () {
+					// Toggle when hovering
+					if (isToggled) {
+						toggleImages();
+					}
+				});
+
+				// Reset the toggle state on mouseleave
+				characterLink.addEventListener("mouseleave", function () {
+					isToggled = false;
+				});
+			}
+		});
+    </script>
   </body>
 </html>
