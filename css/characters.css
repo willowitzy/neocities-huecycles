@@ -1,0 +1,9 @@
+/* Character Pages */
+
+body {
+	font-family: var(--font);
+}
+
+section {
+    display: none;
+}
