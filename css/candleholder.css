@@ -6,6 +6,8 @@ body {
 
 a {
 	cursor: var(--cursor-pointer-alt);
+    color: var(--link-alt);
+    font-family: var(--font);
 }
 
 .lancer {

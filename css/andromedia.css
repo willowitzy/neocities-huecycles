@@ -7,6 +7,8 @@ body {
 
 a {
 	cursor: var(--cursor-pointer);
+	color: var(--link-alt);
+	font-family: var(--font);
 }
 
 /* ------------ NICK STYLES ------------ */
