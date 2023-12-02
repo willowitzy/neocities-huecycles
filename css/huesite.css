@@ -167,7 +167,10 @@ footer {
     text-shadow: var(--text-shadow-footer);
     /* border-top: 1px solid rgb(22, 22, 22); */
 }
-    
+  
+/* Selected Text */
+::selection { color:rgba(255, 255, 255, 1); background:  rgb(0, 171, 201, 0.5);}
+
   /*For narrow screens*/
   @media(max-width: 790px) {
     .wrapper {

@@ -231,3 +231,6 @@ body.eas-page {
 	margin: 0 auto;
 	top: 0px;
 }
+
+/* Selected Text */
+::selection { color:rgba(255, 255, 255, 1); background:  rgba(41, 41, 41, 0.5);}
