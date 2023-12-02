@@ -1,12 +1,12 @@
 /* Andromedia unique styles here */
 
 body {
-  background-color: var(--background);
+	background-color: var(--background);
 }
 
 /* ------------ NICK STYLES ------------ */
 body.nick-page {
-  background-color: #0c0b14;
+	background-color: #0c0b14;
 }
 
 /* ------------ HALOJACK STYLES ------------ */
@@ -20,30 +20,43 @@ body.halojack-page {
 }
 
 body.eas-page {
-  background-color: #0040ff;
-  font-family: "EASy Text";
-  color: #ffffff;
-  image-rendering: pixelated;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+	background-color: #0040ff;
+	text-shadow: -2px 3px 5px #ea94ff, 2px 1px 5px rgba(104, 71, 122,0.9);
+	font-family: "EASy Text";
+	color: #ffffff;
+	image-rendering: pixelated;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
 }
 
 .static {
-  top:0px;
-  left:0px;
-  position: fixed;
-  height:100%;
-  width:100%;
-  background-image: url("../assets/img/static.gif");
-  background-repeat: repeat;
-  background-size: cover;
-  pointer-events: none;
-  opacity: 0.05;
-  filter: brightness(8);
-  z-index: 100;
+	top:0px;
+	left:0px;
+	position: fixed;
+	height:100%;
+	width:100%;
+	background-image: url("../assets/img/static.gif");
+	background-repeat: repeat;
+	background-size: cover;
+	pointer-events: none;
+	opacity: 0.05;
+	filter: brightness(8);
+	z-index: 100;
+}
+
+.eas__title {
+	font-family: 'EASy Text', sans-serif;
+	text-align: center; 
+	font-size:50px;
+}
+
+.eas__marqueeText {
+	font-family: 'EASy Text', sans-serif;
+	text-align: center; 
+	font-size: 20px;
 }
 
 #img {
@@ -55,36 +68,36 @@ body.eas-page {
 }
 
 #img1 {
-cursor: pointer;
+	cursor: pointer;
 }
 
 #over {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 #imgtip {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
 }
 
 .deltarune.logo {
-  font-family: "Deltarune";
+	font-family: "Deltarune";
 }
 
 .wrapper {
-  width: 1000px;
-  margin: 0 auto;
-  top: 0px;
+	width: 1000px;
+	margin: 0 auto;
+	top: 0px;
 }
