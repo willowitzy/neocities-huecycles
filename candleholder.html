@@ -15,7 +15,9 @@
     <link href="css/projects.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/candleholder.css" rel="stylesheet" type="text/css" media="all">
   </head>
-  <body>    
+  <body>
+    <!-- Click/Hover Sound JS -->
+		<script src="js/soundfx.js"></script>
     <div class=wrapper>
       <header>
         <div class="logo-container">
@@ -23,10 +25,10 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Return to Projects</a></li>
-            <li><a href="candleholder/team.html">Meet the Team</a></li>
-            <li><a href="candleholder/faq.html">FAQ</a></li>
+            <li><a href="index.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Home</a></li>
+            <li><a href="projects.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Return to Projects</a></li>
+            <li><a href="candleholder/team.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Meet the Team</a></li>
+            <li><a href="candleholder/faq.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">FAQ</a></li>
           </ul>
         </nav>
       </header>
@@ -48,7 +50,7 @@
     <section class="spamvil-anim">
       <div class="flex-container">
         <div>
-          <a href="#characters" id="character-link">
+          <a href="#characters" id="character-link" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
           <img id="character-img" class="default image pixelated" src="assets/img/candleholder/fall_dark.gif"> <!-- default -->
           <img id="character-img-hover" class="hover image pixelated" src="assets/img/candleholder/fall_neodark.gif"/> <!-- hover -->
           </a>
@@ -60,10 +62,10 @@
 
     <h2 class="center">About the Project</h2>
     <br>
-    <p>Candleholder is a Deltarune fangame in early development. It is being programmed in <a href="https://kristal.cc/">Kristal</a>.</p>
+    <p>Candleholder is a Deltarune fangame in early development. It is being programmed in <a href="https://kristal.cc/" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Kristal</a>.</p>
     <p>You play as Spamton, who has fallen in a Neo Dark Fountain inside Kris's pocket, and now explores a strange, dreamy place called the Cluttersphere.</p>
     <p>With your perspective shifted, having Jevil as your ally (?) and being tasked with protecting Kris's lifeforce in the form of a candlelight, you must use the SOUL to guide Spamton into making it back to the Dark World safely.</p>
-    <p class="center">...Oh, and <a href="candleholder/lancer.html">Lancer<img class="image pixelated" src="assets/img/lancer_wave.gif" style="vertical-align:bottom"></a> is here too.</p>
+    <p class="center">...Oh, and <a href="candleholder/lancer.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Lancer<img class="image pixelated" src="assets/img/lancer_wave.gif" style="vertical-align:bottom"></a> is here too.</p>
     <br><hr><br>
     
     <section id="characters" class="characters">
@@ -73,7 +75,7 @@
 
             <!-- Spamton -->
             <div class="flex-item">
-              <a href="candleholder/spamton.html">
+              <a href="candleholder/spamton.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/spamton.png"/> 
                 <img class="hover image pixelated" src="assets/img/candleholder/spamton_hover.png"/>
                 <p class="center">Spamton</p>
@@ -81,7 +83,7 @@
             </div>
             <!-- Jevil -->
             <div class="flex-item">
-              <a href="candleholder/jevil.html">
+              <a href="candleholder/jevil.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/jevil.png"/>
                 <img class="hover image pixelated" src="assets/img/candleholder/jevil_hover.png"/>
                 <p class="center">Jevil</p>
@@ -89,7 +91,7 @@
             </div>
             <!-- Dess -->
             <div class="flex-item">
-              <a href="candleholder/dess.html">
+              <a href="candleholder/dess.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated dessholiday" src="assets/img/candleholder/dess.png">
                 <img class="hover image pixelated dessholiday" src="assets/img/candleholder/dess_hover.png"/>
                 <p class="center">Dess Holiday</p>
@@ -101,7 +103,7 @@
           <div class="flex-container">
             <!-- Dealmaker -->
             <div class="flex-item">
-                <a href="candleholder/dealmaker.html">
+                <a href="candleholder/dealmaker.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                   <img class="default image pixelated" src="assets/img/candleholder/dealmaker.png">
                   <img class="hover image pixelated" src="assets/img/candleholder/dealmaker_2.gif"/>
                   <p class="center">Dealmaker</p>
@@ -109,7 +111,7 @@
             </div>
             <!-- Devilsknife -->
             <div class="flex-item">
-              <a href="candleholder/devilsknife.html">
+              <a href="candleholder/devilsknife.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/devilsknife.png">
                 <img class="hover image pixelated" src="assets/img/candleholder/devilsknife_blink.gif"/>
                 <p class="center">Devilsknife</p>
@@ -117,7 +119,7 @@
             </div>
             <!-- Risku -->
             <div class="flex-item">
-              <a href="candleholder/risku.html">
+              <a href="candleholder/risku.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/risku.png">
                 <img class="hover image pixelated" src="assets/img/candleholder/risku_2.png"/>
                 <p class="center">Risku</p>
@@ -125,7 +127,7 @@
             </div>
             <!-- Nataline -->
             <div class="flex-item">
-              <a href="candleholder/nataline.html">
+              <a href="candleholder/nataline.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/nataline.png">
                 <img class="hover image pixelated" src="assets/img/candleholder/nataline_2.png"/>
                 <p class="center">Nataline</p>
@@ -143,19 +145,19 @@
     <br>
     <p>
       <div class="flex-container other-links">
-      <a href="https://candleholder-dev.tumblr.com/">
+      <a href="https://candleholder-dev.tumblr.com/" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
         <img class="default image pixelated" src="assets/img/candleholder/tumblr.png" width="82" height="64">
         <img class="hover image pixelated" src="assets/img/candleholder/tumblr_2.png" width="82" height="64"/>
       </a>
-      <a href="https://soundcloud.com/huecycles/sets/candleholder-ost">
+      <a href="https://soundcloud.com/huecycles/sets/candleholder-ost" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
         <img class="default image pixelated" src="assets/img/candleholder/sc.png" width="82" height="64">
         <img class="hover image pixelated" src="assets/img/candleholder/sc_2.png" width="82" height="64"/>
       </a>
-      <a href="https://discord.gg/3TsSY5m7ns">
+      <a href="https://discord.gg/3TsSY5m7ns" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
         <img class="default image pixelated" src="assets/img/candleholder/discord.png" width="82" height="64">
         <img class="hover image pixelated" src="assets/img/candleholder/discord_2.png" width="82" height="64"/>
       </a>
-      <a href="https://gamejolt.com/games/candleholder/791510">
+      <a href="https://gamejolt.com/games/candleholder/791510" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
         <img class="default image pixelated" src="assets/img/candleholder/gamejolt.png" width="82" height="64">
         <img class="hover image pixelated" src="assets/img/candleholder/gamejolt_2.png" width="82" height="64"/>
       </a>
