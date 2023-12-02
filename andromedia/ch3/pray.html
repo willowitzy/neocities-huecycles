@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>* ...</title>
+    <link rel="icon" type="image/png" href="../../assets/img/andromedia/favicon_3.png"/>
+    <!-- CSS -->
+    <link href="../../css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/base.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/projects.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body class="halojack-page">
+    <div class="wrapper">
+      <div id="over"></div>
+      <div id="img">
+        <div id="imgtip"></div>
+        <img
+          id="img1"
+          src="../../assets/img/andromedia/ch3/noelle.png"
+          width="264"
+          height="200"
+          alt="noelle"
+          onclick="imgChange()";
+          style="cursor: pointer;"
+        />
+      </div>
+    </div>
+    <!-- End of .wrapper -->
+    <script>
+        function imgChange()
+        {
+        document.getElementById("over").style.display="block";
+        document.getElementById("img1").src="../../assets/img/andromedia/ch3/noelle_turn.gif";
+        document.getElementById("img1").style.pointerEvents = "none";
+        document.title = '* ...Kris?';
+        };
+    </script>
+</body>
+</html>
