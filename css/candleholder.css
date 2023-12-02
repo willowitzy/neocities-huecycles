@@ -50,13 +50,18 @@
         flex: 0 0 calc(50% - 20px);  /* Even numbers... >:( */
     }
 }  
-  
 
 /* Small screens (phones) */
 @media (max-width: 480px) {
     .flex-container {
         /* Stack items vertically */
         flex-direction: column; 
+    }
+
+    /* The "Other Links" section will keep the row direction layout */
+    .other-links {
+        /* Stack items horizontally (default) */
+        flex-direction: row; 
     }
 
     .flex-item {

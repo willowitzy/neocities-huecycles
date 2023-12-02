@@ -80,7 +80,7 @@ nav li a:hover {
 }
 
 main {
-  padding: 15px;
+  padding: 50px; /* originally: 15px*/
   margin: 0 auto;
   background: #000000;
 }
@@ -129,6 +129,7 @@ footer {
 
 /* Everything in the main box goes in this */
 .wrapper {
+  width: 1000px;
   /* border: 2px solid rgba(247, 0, 255); */
   max-width: 100%;
   margin: 0 auto;
