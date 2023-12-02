@@ -2,6 +2,11 @@
 
 body {
 	background-color: var(--background);
+	cursor: var(--cursor-main);
+}
+
+a {
+	cursor: var(--cursor-pointer);
 }
 
 /* ------------ NICK STYLES ------------ */
@@ -115,7 +120,7 @@ body.eas-page {
 }
 
 #img1 {
-	cursor: pointer;
+	cursor: var(--cursor-pointer);
 }
 
 #over {
@@ -138,6 +143,28 @@ body.eas-page {
 	padding: 5px 10px;
 	border-radius: 5px;
 }
+
+/* Soul modes for Andromedia Secret Bosses START */
+.halojack {
+    cursor: url("../assets/img/heart_cyan.png"), auto;
+}
+
+.beltrowel {
+    cursor: url("../assets/img/heart_green.png"), auto;
+}
+
+.spreeblitz {
+    cursor: url("../assets/img/heart_orange.png"), auto;
+}
+
+.gauze {
+    cursor: url("../assets/img/heart_purple.png"), auto;
+}
+
+.minerva {
+    cursor: url("../assets/img/heart_blue.png"), auto;
+}
+/* END */
 
 .deltarune.logo {
 	font-family: "Deltarune";

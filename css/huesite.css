@@ -1,12 +1,12 @@
 /* Unique to main pages - Shouldn't apply to anything that isn't on the root folder */
 
 body {
-    font-family: "8 Bit Operator", sans-serif;
+    font-family: var(--secondary-font), sans-serif;
     color: var(--font-color);
 }
 
 a {
-  color: var(--link-alt);
+  color: var(--link-default);
   text-decoration: none;
 }
 
@@ -70,10 +70,10 @@ header {
 
 nav {
   background-color: black;
+  font-family: var(--font);
   padding: 10px;
   text-align: center;
   margin-top: 20px;
-  font-family: '8 Bit Operator Bold';
 }
 
 nav ul {
@@ -89,7 +89,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: var(--link-alt);
+  color: var(--link-default);
   font-size: 24px;
   font-weight: bold;
 }

@@ -1,5 +1,13 @@
 /* Candleholder unique styles here */
 
+body {
+	cursor: var(--cursor-alt);
+}
+
+a {
+	cursor: var(--cursor-pointer-alt);
+}
+
 .lancer {
     margin: 5px 0;
 }
