@@ -72,9 +72,8 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
     'incest',
 ]
 
-const s_noelleBlogName = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'holidaygirl1225',
-]
+const s_noelleBlogName = ['holidaygirl1225']
+const s_noelleBlogIcon = '../assets/img/holidaygirl1225/holidaygirl-icon.gif'
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
 const s_widgetTitle = 'Leave a comment!';
@@ -338,14 +337,6 @@ function displayComments(comments) {
         } else {container = document.getElementById(parentId + '-replies')}
         reply.className = 'c-reply';
         container.appendChild(reply);
-
-        // Icon for comments
-        let img_noelle = document.createElement("img_noelle"); 
-        img_noelle.innerHTML = s_noelleBlogName;
-        img_noelle.src = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
-        img_noelle.className = 'c-noelleIcon';
-        reply.appendChild(img_noelle);
-
     }
 
     // Handle adding the buttons to show or hide replies if collapsed replies are enabled
@@ -412,14 +403,8 @@ function createComment(data) {
     // Icon for comments
     let img = document.createElement("img"); 
     img.innerHTML = s_commentIcon;
-    if (data.Name ="holidaygirl1225") 
-    {
-        img.src = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
-    } 
-    else 
-    {
-        img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";
-    }   
+    if (s_noelleBlogName) {img = img.replace(s_noelleBlogIcon)}
+    img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";   
     img.className = 'c-commentIcon';
     name.appendChild(img);
 

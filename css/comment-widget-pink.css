@@ -200,20 +200,12 @@
     margin-right: 0.5rem;
 }
 
-.c-noelleIcon {
-    float: left;
-    height: 64px;
-    width: 64px;
-    margin-right: 0.5rem;
-    margin-bottom: 10px;
-}
-
 .c-site {
     text-transform: uppercase;
     text-decoration: underline;
     color: #3832F0;
 }
-.c-site:hover {color: white;}
+.c-site:hover {color: #ff66e0;}
 .c-timestamp {
     float: right;
     opacity: 75%;
