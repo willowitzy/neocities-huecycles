@@ -72,6 +72,7 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
     'incest',
 ]
 
+const s_noelle = true
 const s_noelleBlogName = ['holidaygirl1225']
 const s_noelleBlogIcon = '../assets/img/holidaygirl1225/holidaygirl-icon.gif'
 
@@ -403,8 +404,9 @@ function createComment(data) {
     // Icon for comments
     let img = document.createElement("img"); 
     img.innerHTML = s_commentIcon;
-    //if (s_noelleBlogName) {img = img.replace(s_noelleBlogIcon)}
-    img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";   
+    img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif"; 
+    var imageUrl = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
+    if (data.Name.includes("holidaygirl1225")) { {img.setAttribute("src", imageUrl)}
     img.className = 'c-commentIcon';
     name.appendChild(img);
 
