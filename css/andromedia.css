@@ -72,6 +72,7 @@ body.nick-page {
 
 /* ------------ HALOJACK STYLES ------------ */
 body.halojack-page {
+	background: black;
     image-rendering: pixelated;
     display: flex;
     justify-content: center;
@@ -80,11 +81,62 @@ body.halojack-page {
     margin: 0;
 }
 
-/* ------------ EAS STYLES ------------ */
+#img {
+    /* Centering the TV on the screen */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1 {
+	cursor: var(--cursor-pointer);
+}
+
+#over {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#imgtip {
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+/* ------------ SIGNAL INTRUSION STYLES ------------ */
 
 body.eas-page {
 	background-color: rgb(0, 38, 153);
 	box-shadow: inset 0 0 490px rgb(81, 28, 28);
+	font-family: "EASy Text";
+	color: #ffffff;
+	text-shadow: -2px 3px 5px #ea94ff, 2px 1px 5px rgba(104, 71, 122,0.9);
+	animation-duration: 0.01s;
+	animation-name: textflicker;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	image-rendering: pixelated;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+body.standby-page {
+	background-color: rgb(23, 2, 16);
+	box-shadow: inset 0 0 490px rgb(52, 22, 22);
 	font-family: "EASy Text";
 	color: #ffffff;
 	text-shadow: -2px 3px 5px #ea94ff, 2px 1px 5px rgba(104, 71, 122,0.9);
@@ -144,7 +196,37 @@ body.eas-page {
 	position: fixed;
 	height:100%;
 	width:100%;
-	background-image: url("../assets/img/static.gif");
+	background-image: url("../assets/img/overlays/static.gif");
+	background-repeat: repeat;
+	background-size: cover;
+	pointer-events: none;
+	opacity: 0.05;
+	filter: brightness(8);
+	z-index: 100;
+}
+
+.static_deltarune {
+	top:0px;
+	left:0px;
+	position: fixed;
+	height:100%;
+	width:100%;
+	background-image: url("../assets/img/overlays/static_deltarune.gif");
+	background-repeat: repeat;
+	background-size: cover;
+	pointer-events: none;
+	opacity: 0.97;
+	filter: contrast(20%);
+	z-index: 100;
+}
+
+.static_vhs {
+	top:0px;
+	left:0px;
+	position: fixed;
+	height:100%;
+	width:100%;
+	background-image: url("../assets/img/overlays/vhs.gif");
 	background-repeat: repeat;
 	background-size: cover;
 	pointer-events: none;
@@ -166,39 +248,6 @@ body.eas-page {
 }
 
 /* ------------ EAS STYLES END ------------ */
-
-#img {
-    /* Centering the TV on the screen */
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#img1 {
-	cursor: var(--cursor-pointer);
-}
-
-#over {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-#imgtip {
-	position: absolute;
-	bottom: -20px;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: rgba(0, 0, 0, 0.7);
-	color: white;
-	padding: 5px 10px;
-	border-radius: 5px;
-}
 
 /* Soul modes for Andromedia Secret Bosses START */
 .halojack {

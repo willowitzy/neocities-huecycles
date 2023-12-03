@@ -6,13 +6,18 @@
     color: #ffffff;
 }
 
-#hplays p a {
+a {
     text-decoration: underline;
-    color: #5f5fff;
+    color: white;
+}
+
+a:hover {
+    color: #929292;
 }
 
 body {
     background: #000000;
+    background-image: url("../assets/img/hplays/bg_fire.png");
 }
 
 .wrapper {
@@ -20,7 +25,6 @@ body {
     /*border: 3px solid black;*/
     margin: 0 auto;
     top: 0px;
-    background: #000000;
 }
 
 .container {
@@ -38,7 +42,69 @@ body {
     font-size: 13px;
 }
 
+.container .footer{
+    text-align: left;
+    background: #2A2F33;
+}
+
 #banner {
     max-width: 100%;
     object-fit: contain;
+}
+
+.active, .collapsible:hover {
+    background-color: #777;
+}
+  
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: #202428;
+    text-align: left;
+    line-height: 20px;
+}
+
+.content .author {
+    background: #777;
+    padding: 15px 18px;
+    text-decoration: underline;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.content .dess {
+    background: #777;
+    padding: 0px 18px;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.content .author .timestamp {
+    float: right;
+    font-size: small;
+    color: #ffffff;
+}
+
+.content .author:hover {
+    color: #00005e;
+}
+
+.content .author a {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.content .author a:hover {
+    color: #00005e;
+}
+
+.content a.disabled {
+    cursor: not-allowed;
+}
+
+.content .comments {
+    padding: 15px 18px;
 }

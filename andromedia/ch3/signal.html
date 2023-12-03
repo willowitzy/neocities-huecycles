@@ -11,6 +11,19 @@
     <link href="../../css/projects.css" rel="stylesheet" type="text/css" media="all">
     <link href="../../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
   </head>
+  <script>
+    var urlArray = [
+    "../ch3/eas",
+    "../ch3/standby",
+    "../ch3/location"
+    ];
+
+    function randomUrl() {
+        var randomNumber = Math.floor(Math.random() * urlArray.length);
+        var newUrl = urlArray[randomNumber];
+        window.location.href = newUrl;
+    }
+  </script>
   <body class="halojack-page">
     <div class="wrapper">
       <div id="over"></div>
@@ -20,7 +33,7 @@
           id="interference"
           src="../../assets/img/andromedia/ch3/halo_interference.gif"
           alt="signal intrusion"
-          onclick="window.location.href='../ch3/eas'";
+          onclick="randomUrl()";
           style="var(--cursor-pointer);";
         />
       </div>
