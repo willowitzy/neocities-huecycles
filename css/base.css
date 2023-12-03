@@ -53,10 +53,6 @@
 }
 
 /* ---------- Generic Styles - Applies to ALL ---------- */
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #000000;
     /* sans-serif is the fall back font */

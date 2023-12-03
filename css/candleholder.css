@@ -73,9 +73,7 @@ a {
     /* Three items per row */
 }
 
-.dessholiday {
-    padding-left: 20%;
-}
+/* .dessholiday {} */
 
 /* ---------- Character Pages ---------- */
 
@@ -88,7 +86,14 @@ a {
     align-items: center; 
     /* Center children vertically */
     justify-content: center; 
-    /* text-align: center;  */
+}
+
+/* ---------- Social Icons ---------- */
+.social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 30%;
 }
 
 /* Selected Text */
@@ -119,29 +124,54 @@ a {
     .character-audioplayer {
         margin-bottom: 10px;
     }
+
+    /* ---------- Social Icons Responsivity ---------- */
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin: 0 5%;
+    }
+    .social-icon {
+        margin: 10px; 
+    }
 }  
 
 /* ---------- Small screens (phones) ---------- */
 @media (max-width: 480px) {
+    /* Making main body and wrapper container narrower */
+    main {
+        padding: 5%;
+    }
+
     .wrapper {
         padding: 1em;
     }
 
+    /* Vertical alignment of items */
     .flex-container {
-        /* Stack items vertically */
         flex-direction: column; 
     }
 
-    /* The "Other Links" section will keep the row direction layout */
-    .other-links {
-        /* Stack items horizontally (default) */
-        flex-direction: row; 
+
+    /* ---------- Social Icons Responsivity ---------- */
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
 
-    .flex-item {
-        /* Make each item take the full width */
-        width: 100%; 
-    }
+    /* Center content within each grid item */
+    .social-icon {
+
+        text-align: center;
+      }
+
+
+    /* .spr-dealmaker, .spr-devilsknife {
+        margin-top: 10%;
+    } */
 }
 
 /* 

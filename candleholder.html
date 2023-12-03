@@ -80,7 +80,7 @@
           <div class="flex-container">
 
             <!-- Spamton -->
-            <div class="flex-item">
+            <div class="flex-item spr-spamton">
               <a href="candleholder/spamton.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/spamton.png"/> 
                 <img class="hover image pixelated" src="assets/img/candleholder/spamton_hover.png"/>
@@ -88,7 +88,7 @@
               </a>
             </div>
             <!-- Jevil -->
-            <div class="flex-item">
+            <div class="flex-item spr-jevil">
               <a href="candleholder/jevil.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/jevil.png"/>
                 <img class="hover image pixelated" src="assets/img/candleholder/jevil_hover.png"/>
@@ -96,10 +96,10 @@
               </a>
             </div>
             <!-- Dess -->
-            <div class="flex-item">
+            <div class="flex-item spr-dess">
               <a href="candleholder/dess.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-                <img class="default image pixelated dessholiday" src="assets/img/candleholder/dess.png">
-                <img class="hover image pixelated dessholiday" src="assets/img/candleholder/dess_hover.png"/>
+                <img class="default image pixelated" src="assets/img/candleholder/dess.png">
+                <img class="hover image pixelated" src="assets/img/candleholder/dess_hover.png"/>
                 <p class="center">Dess Holiday</p>
               </a>
             </div>
@@ -108,7 +108,7 @@
           <!-- Lower Row -->
           <div class="flex-container">
             <!-- Dealmaker -->
-            <div class="flex-item">
+            <div class="flex-item spr-dealmaker">
                 <a href="candleholder/dealmaker.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                   <img class="default image pixelated" src="assets/img/candleholder/dealmaker.png">
                   <img class="hover image pixelated" src="assets/img/candleholder/dealmaker_2.gif"/>
@@ -116,7 +116,7 @@
                 </a>
             </div>
             <!-- Devilsknife -->
-            <div class="flex-item">
+            <div class="flex-item spr-devilsknife">
               <a href="candleholder/devilsknife.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/devilsknife.png">
                 <img class="hover image pixelated" src="assets/img/candleholder/devilsknife_blink.gif"/>
@@ -124,7 +124,7 @@
               </a>
             </div>
             <!-- Risku -->
-            <div class="flex-item">
+            <div class="flex-item spr-risku">
               <a href="candleholder/risku.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/risku.png">
                 <img class="hover image pixelated" src="assets/img/candleholder/risku_2.png"/>
@@ -132,7 +132,7 @@
               </a>
             </div>
             <!-- Nataline -->
-            <div class="flex-item">
+            <div class="flex-item spr-nataline">
               <a href="candleholder/nataline.html" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
                 <img class="default image pixelated" src="assets/img/candleholder/nataline.png">
                 <img class="hover image pixelated" src="assets/img/candleholder/nataline_2.png"/>
@@ -141,28 +141,38 @@
             </div>
           </div> <!-- End of flex-container -->
         </section> <!-- End of characters section -->
-      
-      <!-- Change this to padding -->
       <hr>
     
     <h2 class="center">Other Links</h2>
-      <div class="flex-container other-links">
-      <a href="https://candleholder-dev.tumblr.com/" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-        <img class="default image pixelated" src="assets/img/candleholder/tumblr.png" width="82" height="64">
-        <img class="hover image pixelated" src="assets/img/candleholder/tumblr_2.png" width="82" height="64"/>
-      </a>
-      <a href="https://soundcloud.com/huecycles/sets/candleholder-ost" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-        <img class="default image pixelated" src="assets/img/candleholder/sc.png" width="82" height="64">
-        <img class="hover image pixelated" src="assets/img/candleholder/sc_2.png" width="82" height="64"/>
-      </a>
-      <a href="https://discord.gg/3TsSY5m7ns" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-        <img class="default image pixelated" src="assets/img/candleholder/discord.png" width="82" height="64">
-        <img class="hover image pixelated" src="assets/img/candleholder/discord_2.png" width="82" height="64"/>
-      </a>
-      <a href="https://gamejolt.com/games/candleholder/791510" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-        <img class="default image pixelated" src="assets/img/candleholder/gamejolt.png" width="82" height="64">
-        <img class="hover image pixelated" src="assets/img/candleholder/gamejolt_2.png" width="82" height="64"/>
-      </a>
+      <div class="social-links">
+		<!-- Tumblr -->
+		<div class="social-icon tumblr">
+			<a href="https://candleholder-dev.tumblr.com/" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+				<img class="default image pixelated social-icon" src="assets/img/candleholder/tumblr.png" width="82" height="64">
+				<img class="hover image pixelated social-icon" src="assets/img/candleholder/tumblr_2.png" width="82" height="64"/>
+			</a>
+		</div>
+		<!-- Soundcloud -->
+		<div class="social-icon soundcloud">
+			<a href="https://soundcloud.com/huecycles/sets/candleholder-ost" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+				<img class="default image pixelated social-icon" src="assets/img/candleholder/sc.png" width="82" height="64">
+				<img class="hover image pixelated social-icon" src="assets/img/candleholder/sc_2.png" width="82" height="64"/>
+			</a>
+		</div>
+		<!-- Discord -->
+		<div class="social-icon discord">
+			<a href="https://discord.gg/3TsSY5m7ns" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+				<img class="default image pixelated social-icon" src="assets/img/candleholder/discord.png" width="82" height="64">
+				<img class="hover image pixelated social-icon" src="assets/img/candleholder/discord_2.png" width="82" height="64"/>
+			</a>
+		</div>
+		<!-- Game Jolt -->
+		<div class="social-icon gamejolt">
+			<a href="https://gamejolt.com/games/candleholder/791510" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+				<img class="default image pixelated social-icon" src="assets/img/candleholder/gamejolt.png" width="82" height="64">
+				<img class="hover image pixelated social-icon" src="assets/img/candleholder/gamejolt_2.png" width="82" height="64"/>
+			</a>
+		</div>
     </div> <!-- End of .flex-container -->
 
   </main> <!-- End of .main -->
