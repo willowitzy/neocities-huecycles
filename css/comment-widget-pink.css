@@ -54,6 +54,7 @@
 */
 
 /* Main */
+
 #c_widget {
     box-sizing: border-box;
     height: 100%;
@@ -96,6 +97,12 @@
     background-color: #ffffff;
     color: #ff66e0;
     border: 1px solid white;
+}
+
+#c_replyingText {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
 /* Input section */
@@ -150,6 +157,12 @@
     border: 2px solid #ff66e0;
     background-color: #EFBCE7; 
 }
+
+.c-comment {
+    background-color: #ffd5ef;
+    border: 1px solid white;
+}
+
 .c-reply {
     display: block;
     width: 90%;
@@ -165,7 +178,7 @@
     margin: -10px;
     margin-top: 10px;
     padding: 10px;
-    background-color: black;
+    background-color: #ffd5ef;
 }
 
 .c-name {
@@ -179,7 +192,7 @@
 .c-site {
     text-transform: uppercase;
     text-decoration: none;
-    color: #B766FF;
+    color: #3832F0;
 }
 .c-site:hover {color: white;}
 .c-timestamp {
@@ -192,10 +205,10 @@
     margin-right: -10px;
     padding: 10px;
     font-family: "Georgia", Georgia, serif;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: #ffd5ef;
 }
 
 /* Pagination */
