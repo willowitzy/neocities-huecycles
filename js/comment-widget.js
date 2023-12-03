@@ -17,11 +17,11 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = '1FAIpQLSdOfC6Hv2m8pzDGi3F6PIrNexwC1U-jhOks-Do9MHomnyLnBw';
-const s_formId = '738369933';
-const s_nameId = '1631160841';
-const s_websiteId = '571606822';
-const s_textId = '209946979';
+const s_stylePath = '../js/comment-widget.js';
+const s_formId = '1FAIpQLSdOfC6Hv2m8pzDGi3F6PIrNexwC1U-jhOks-Do9MHomnyLnBw';
+const s_nameId = '738369933';
+const s_websiteId = '1631160841';
+const s_textId = '571606822';
 const s_pageId = '209946979';
 const s_replyId = '694812919';
 const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
