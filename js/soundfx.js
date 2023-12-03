@@ -48,7 +48,6 @@ function createsoundbite(sound) {
 		}
 		html5audio.load();
 		html5audio.playclip = function() {
-			// Makes a promise for when the audio finishes playing
 			html5audio.pause();
 			html5audio.currentTime=0;
 			html5audio.play();

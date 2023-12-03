@@ -1,4 +1,4 @@
-/* CSS Variables - Colors & Sizing */
+/* ---------- CSS Variables - Colors & Sizing ---------- */
 :root {
     --background: #000000;
     --font: "8 Bit Operator Bold";
@@ -25,11 +25,7 @@
     --border-color: #0f0f71;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-/* Fonts */
+/*  ---------- Fonts  ---------- */
 @font-face {
     font-family: 'Deltarune';
     src: url("../assets/fonts/Deltarune.ttf") format("truetype");
@@ -56,21 +52,22 @@
     font-style: normal;
 }
 
-/* Other Generic Styles - Applies to ALL */
+/* ---------- Generic Styles - Applies to ALL ---------- */
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #000000;
     /* sans-serif is the fall back font */
+    font-family: var(--font), sans-serif;
     line-height: 140%;
     text-rendering: pixelated;
-    font-family: var(--font);
     font-weight: normal;
     text-shadow: var(--text-shadow);
 }
 
-a:hover {
-    text-shadow: var(--text-shadow-hover);
-}
-
+/* ---------- Default Elements ---------- */
 p { 
     margin-top: 16px;
     margin-bottom: 16px;
@@ -78,24 +75,36 @@ p {
     text-align: justify;
 }
 
-.bold {
-    font-weight: bold;
-}
-
-.center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.italic {
-    font-style: italic;
-}
-
 hr {
     opacity: 0.2;
 }
 
+a:hover {
+    text-shadow: var(--text-shadow-hover);
+}
+
+table {
+    border: 2px solid;
+    border-color: var(--border-color);
+    padding: 0px;
+}
+
+th {
+    text-align: left;
+    padding: 20px;
+    font-family: var(--font);
+}
+
+td {
+    text-align: left;
+    padding: 20px;
+    font-family: var(--secondary_font);
+}
+
+tr:nth-child(even) {background-color: #0a0a17;}
+tr:nth-child(odd) {background-color: var(--primary_color);}
+
+/* ---------- Headings ---------- */
 h1 {
     color: var(--h1);
     font-size:40px;
@@ -123,29 +132,39 @@ h3 {
     font-family: var(--font);
 }  
 
+/* ---------- Alignment ---------- */
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Classes for Font Weight ---------- */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* ---------- Container Class ---------- */
 .container {
     display: inline;
     padding-right: 6%;
     padding-left: 6%;
 }
 
-table {
-    border: 2px solid;
-    border-color: var(--border-color);
-    padding: 0px;
-}
-
-th {
-    text-align: left;
-    padding: 20px;
-    font-family: var(--font);
-}
-
-td {
-    text-align: left;
-    padding: 20px;
-    font-family: var(--secondary_font);
-}
-
-tr:nth-child(even) {background-color: #0a0a17;}
-tr:nth-child(odd) {background-color: var(--primary_color);}
+/* ---------------------------------- */
