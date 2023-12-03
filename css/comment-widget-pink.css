@@ -145,6 +145,7 @@
     display: block; 
     margin-left: auto; 
     margin-right: 0;
+    cursor: pointer;
 }
 #c_replyingText {
     color: rgb(0, 0, 0);
@@ -191,6 +192,21 @@
     font-weight: bold;
 }
 
+.c-commentIcon {
+    float: left;
+    height: 64px;
+    width: 64px;
+    margin-right: 0.5rem;
+}
+
+.c-noelleIcon {
+    float: left;
+    height: 64px;
+    width: 64px;
+    margin-right: 0.5rem;
+    margin-bottom: 10px;
+}
+
 .c-site {
     text-transform: uppercase;
     text-decoration: underline;
@@ -213,24 +229,20 @@
     background-color: #ffd5ef;
 }
 
-.c-commentIcon {
-    float: left;
-    height: 64px;
-    width: 64px;
-    margin-right: 0.5rem;
-}
-
 /* Pagination */
 #c_pagination {text-align: center;}
 .c-replyButton {
     margin-top: 10px;
     margin-right: 4px;
+    cursor: pointer;
 }
 .c-expandButton {
     margin-top: 10px;
     margin-left: 4px;
+    cursor: pointer;
 }
 .c-paginationButton {
     margin-right: 4px;
     margin-left: 4px;
+    cursor: pointer;
 }

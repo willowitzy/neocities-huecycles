@@ -44,7 +44,7 @@ let s_includeUrlParameters = false; // Makes new comment sections on pages with 
 const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make the index page and page 1 of your webcomic have the same comment section
 
 // Word filter - Censor profanity, etc
-const s_wordFilterOn = false; // True for on, false for off
+const s_wordFilterOn = true; // True for on, false for off
 const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
     'faggot',
@@ -70,6 +70,10 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
     'pedophilia',
     'futanari',
     'incest',
+]
+
+const s_noelleBlogName = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
+    'holidaygirl1225',
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
@@ -334,6 +338,14 @@ function displayComments(comments) {
         } else {container = document.getElementById(parentId + '-replies')}
         reply.className = 'c-reply';
         container.appendChild(reply);
+
+        // Icon for comments
+        let img_noelle = document.createElement("img_noelle"); 
+        img_noelle.innerHTML = s_noelleBlogName;
+        img_noelle.src = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
+        img_noelle.className = 'c-commentIcon';
+        reply.appendChild(img_noelle);
+
     }
 
     // Handle adding the buttons to show or hide replies if collapsed replies are enabled
@@ -398,11 +410,20 @@ function createComment(data) {
     comment.appendChild(name);
 
     // Icon for comments
-    let img = document.createElement("img"); 
-    img.innerHTML = s_commentIcon;
-    img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";
-    img.className = 'c-commentIcon';
-    comment.appendChild(img);
+    if (data.Name) {
+        let img = document.createElement("img"); 
+        img.innerHTML = s_commentIcon;
+        if (data.Name ="holidaygirl1225") 
+        {
+            img.src = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
+        } 
+        else 
+        {
+            img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";
+        }   
+        img.className = 'c-commentIcon';
+        comment.appendChild(img);
+    }
 
     // Timestamp
     let time = document.createElement('span');
