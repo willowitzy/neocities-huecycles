@@ -47,7 +47,29 @@ const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make
 const s_wordFilterOn = false; // True for on, false for off
 const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'heck', 'dang'
+    'faggot',
+    'whore',
+    'dyke',
+    'retard',
+    'nigger',
+    'nigga',
+    'fag',
+    'lolicon',
+    'shota',
+    'shotacon',
+    'nazi',
+    'nazism',
+    'hitler',
+    'rape',
+    'shemale',
+    'trannie',
+    'tranny',
+    'zoophilia',
+    'zoophile',
+    'pedophile',
+    'pedophilia',
+    'futanari',
+    'incest',
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
@@ -56,6 +78,7 @@ const s_nameFieldLabel = 'Name';
 const s_websiteFieldLabel = 'Website (Optional)';
 const s_textFieldLabel = '';
 const s_submitButtonLabel = 'Submit';
+const s_commentIcon = 'Icon'; // The button for replying to someone
 const s_loadingText = 'Loading comments...';
 const s_noCommentsText = 'No comments yet!';
 const s_closedCommentsText = 'Comments are closed temporarily!';
@@ -292,6 +315,13 @@ function displayComments(comments) {
         comment.className = 'c-comment';
         c_container.appendChild(comment);
         a_commentDivs.push(document.getElementById(comment.id)); // Add to array for use later
+
+        // Icon for comments
+        let img = document.createElement("img"); 
+        img.innerHTML = s_commentIcon;
+        img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";
+        img.className = 'c-commentIcon';
+        comment.appendChild(img);
     }
 
     // Replies
