@@ -74,12 +74,10 @@
     font-size: 15px;
 	text-align: center;
     text-decoration: underline;
-    background-color: #ffffff;
     color: #3832F0;
-    border: 1px solid white;
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
-    border: 1px solid #ff66e0;
+    color: #ff66e0;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
@@ -146,7 +144,7 @@
     margin-right: 0;
 }
 #c_replyingText {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: right;
 }
 
@@ -187,11 +185,12 @@
     margin-right: 10px;
     padding: 0;
     text-transform: uppercase;
+    background-color: #EFBCE7;
     font-weight: bold;
 }
 .c-site {
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
     color: #3832F0;
 }
 .c-site:hover {color: white;}
