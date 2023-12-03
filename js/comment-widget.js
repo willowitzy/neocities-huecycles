@@ -403,7 +403,7 @@ function createComment(data) {
     // Icon for comments
     let img = document.createElement("img"); 
     img.innerHTML = s_commentIcon;
-    if (s_noelleBlogName) {img = img.replace(s_noelleBlogIcon)}
+    //if (s_noelleBlogName) {img = img.replace(s_noelleBlogIcon)}
     img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";   
     img.className = 'c-commentIcon';
     name.appendChild(img);
