@@ -406,7 +406,7 @@ function createComment(data) {
     img.innerHTML = s_commentIcon;
     img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif"; 
     var imageUrl = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
-    if (data.Name.includes("holidaygirl1225")) { {img.setAttribute("src", imageUrl)}
+    if (data.Name.includes("holidaygirl1225")) { {img.setAttribute("src", imageUrl)}};
     img.className = 'c-commentIcon';
     name.appendChild(img);
 
