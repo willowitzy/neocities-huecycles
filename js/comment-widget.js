@@ -315,13 +315,6 @@ function displayComments(comments) {
         comment.className = 'c-comment';
         c_container.appendChild(comment);
         a_commentDivs.push(document.getElementById(comment.id)); // Add to array for use later
-
-        // Icon for comments
-        let img = document.createElement("img"); 
-        img.innerHTML = s_commentIcon;
-        img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";
-        img.className = 'c-commentIcon';
-        comment.appendChild(img);
     }
 
     // Replies
@@ -403,6 +396,13 @@ function createComment(data) {
     name.innerText = filteredName;
     name.className = 'c-name';
     comment.appendChild(name);
+
+    // Icon for comments
+    let img = document.createElement("img"); 
+    img.innerHTML = s_commentIcon;
+    img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";
+    img.className = 'c-commentIcon';
+    comment.appendChild(img);
 
     // Timestamp
     let time = document.createElement('span');

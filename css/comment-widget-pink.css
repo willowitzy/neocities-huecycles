@@ -46,8 +46,8 @@
         .c-text - The actual text body of the comment/reply (a <p> element)
         .c-replyButton - All reply <button>s
         .c-expandButton - The <button>s to reveal/hide replies (These only show if s_collapsedReplies is set to true in the JS)
-        .c-img - The icon for the commenter
-        .c-noelleImg - The icon for Noelle
+        .c-commentIcon - The icon for the commenter
+        .c-noelleIcon - The icon for Noelle
         
         #c_pagination - The <div> wrapper for the pagination at the bottom (Only shows if there's more than one page)
         .c-paginationButton - Both left and right directional <button>s
@@ -80,6 +80,7 @@
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
     color: #ff66e0;
+    cursor: pointer;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
@@ -187,9 +188,9 @@
     margin-right: 10px;
     padding: 0;
     text-transform: uppercase;
-    background-color: #EFBCE7;
     font-weight: bold;
 }
+
 .c-site {
     text-transform: uppercase;
     text-decoration: underline;
