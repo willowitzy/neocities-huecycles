@@ -343,7 +343,7 @@ function displayComments(comments) {
         let img_noelle = document.createElement("img_noelle"); 
         img_noelle.innerHTML = s_noelleBlogName;
         img_noelle.src = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
-        img_noelle.className = 'c-commentIcon';
+        img_noelle.className = 'c-noelleIcon';
         reply.appendChild(img_noelle);
 
     }
@@ -410,20 +410,18 @@ function createComment(data) {
     comment.appendChild(name);
 
     // Icon for comments
-    if (data.Name) {
-        let img = document.createElement("img"); 
-        img.innerHTML = s_commentIcon;
-        if (data.Name ="holidaygirl1225") 
-        {
-            img.src = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
-        } 
-        else 
-        {
-            img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";
-        }   
-        img.className = 'c-commentIcon';
-        comment.appendChild(img);
-    }
+    let img = document.createElement("img"); 
+    img.innerHTML = s_commentIcon;
+    if (data.Name ="holidaygirl1225") 
+    {
+        img.src = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
+    } 
+    else 
+    {
+        img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif";
+    }   
+    img.className = 'c-commentIcon';
+    name.appendChild(img);
 
     // Timestamp
     let time = document.createElement('span');

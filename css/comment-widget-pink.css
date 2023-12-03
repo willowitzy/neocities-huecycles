@@ -186,6 +186,7 @@
 .c-name {
     display: inline-block;
     margin: 0;
+    height: 64px;
     margin-right: 10px;
     padding: 0;
     text-transform: uppercase;
