@@ -232,5 +232,14 @@ body.eas-page {
 	top: 0px;
 }
 
+.flex-item {
+    display: flex;
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    justify-content: center;
+    /* flex: 0 0 calc(33.33% - 20px);  */
+    /* Three items per row */
+}
+
 /* Selected Text */
 ::selection { color:rgba(255, 255, 255, 1); background:  rgba(41, 41, 41, 0.5);}
