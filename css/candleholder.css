@@ -106,8 +106,7 @@ a {
     align-items: center;
     width: 100%;
     font-size: 14px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255);
     margin: 1em;
 }
 
@@ -119,7 +118,6 @@ a {
     /* border: 1px solid rgb(255, 255, 255); */
     padding: 10px;
     cursor: var(--cursor-pointer-alt);
-    border-radius: 5px;
     /* position: relative; */
     transition: all 0.3s; /* For smooth effect when hovering */
     flex-grow: 0;
@@ -192,7 +190,7 @@ a {
     background-color: #000000;
     color: #fff;
     cursor: var(--cursor-pointer-alt);
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .vol-up {

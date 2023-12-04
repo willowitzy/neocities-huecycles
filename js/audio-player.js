@@ -11,7 +11,7 @@ function playPause() {
         playButton.textContent = '||';
     } else {
         audio.pause();
-        playButton.textContent = '>'; 
+        playButton.textContent = '▶'; 
     }
 }
 
