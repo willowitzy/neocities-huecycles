@@ -166,3 +166,101 @@ h3 {
 }
 
 /* ---------------------------------- */
+
+/* ---------- Audio Player ---------- */
+.audioplayer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 1em;
+}
+
+.chara-audioplayer {
+    background-color: #000000;
+    /* width: 4em; */
+    color: #fff;
+    margin: px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    padding: 10px;
+    cursor: var(--cursor-pointer-alt);
+    /* position: relative; */
+    transition: all 0.3s; /* For smooth effect when hovering */
+    flex-grow: 0;
+}
+
+.chara-audioplayer:hover {
+    background-color: #333;
+}
+
+/* Volume button grows on hover */
+.chara-audioplayer.volume-button:hover {
+    flex-grow: 1;
+}
+
+.progress-slider {
+    margin-right: 3%;
+    appearance: none;
+    cursor: var(--cursor-pointer-alt);
+    height: 8px;
+    border-radius: 5px;
+    background: #333;
+    outline: none;
+}
+
+.progress-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: var(--cursor-pointer-alt);
+}
+
+.volume-container {
+    display: flex;
+    align-items: flex-end;
+    position: relative; /* position relative for absolute positioning */
+}
+
+.volume-slider-container {
+    background-color: rgb(31, 31, 31, 0.5);
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 4em;
+    height: 100px;
+}
+
+.chara-audioplayer.volume-button {
+     /* To fill the available height */
+    flex-grow: 1;
+}
+
+.volume-container:not(.expanded) .volume-slider {
+    display: none;
+}
+
+.volume-slider { 
+    width: 3em;
+    cursor: var(--cursor-pointer-alt);
+}
+
+/* ---------- Play/Pausa & Volume Buttons ---------- */
+.btn-play {
+    margin-left: 5px;
+}
+
+.btn-vol {
+    margin: 5px 0;
+    background-color: #000000;
+    color: #fff;
+    cursor: var(--cursor-pointer-alt);
+    border-radius: 0px;
+}
+
+.vol-up {
+    margin-right: 5px;
+}
