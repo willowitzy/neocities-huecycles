@@ -275,12 +275,6 @@ body.standby-page {
 	font-family: "Deltarune";
 }
 
-.wrapper {
-	width: 1000px;
-	margin: 0 auto;
-	top: 0px;
-}
-
 .flex-item {
     display: flex;
     max-width: 100%; /* Make images responsive */

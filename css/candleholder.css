@@ -211,7 +211,7 @@ a {
 ::selection { color:#ff8bbb; background:  #1b1b1b;} /* Selected Text */
 
 :focus {
-    /* background-color: #333; */
+    background-color: #333;
     outline: 2px solid transparent;
     outline-offset: 2px; 
     transition: outline 0.3s;
