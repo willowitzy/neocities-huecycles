@@ -2,6 +2,7 @@
 
 body {
 	font-family: var(--font);
+	background-color: black;
 	color: #00c000;
 	text-shadow: none;
 }
