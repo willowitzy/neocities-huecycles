@@ -23,10 +23,28 @@
 				<p class="center by-text" style="margin-left: 25%;">art by 
 					<a href="https://twitter.com/willowitzy">@willowitzy</a>
 				</p>
-				<audio controls>
-					<source src="../assets/audio/devilsknife_battle.ogg" type="audio/ogg">
-					Your browser does not support the audio element.
-				</audio>
+
+				<!-- Audio Player -->
+				<div class="audioplayer-container"> 
+					<audio id="audioplayer"> <!-- preload="none" -->
+						<source src="../assets/audio/devilsknife_battle.ogg" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+
+					<!-- Play and Progress Bar -->
+					<button class="chara-audioplayer btn-play" type="button" onclick="playPause()">></button>
+					<input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
+
+					<!-- Time display -->
+					<span class="time-display">0:00 / 1:11</span>
+
+					<!-- Volume -->
+					<div class="volume-container">
+						<!-- Volume Buttons (+/-) -->
+						<button class="chara-audioplayer btn-vol vol-down" type="button" onclick="decreaseVolume()">-</button>
+						<button class="chara-audioplayer btn-vol vol-up" type="button" onclick="increaseVolume()">+</button>
+					</div>
+				</div>	
 			</div>
 
 			<!-- Main Content -->
@@ -51,5 +69,8 @@
 
 	<!-- Return Button -->
 	<p class="center bold"><a href="../candleholder">RETURN</a></p>
+	
+	<!-- Audio Player JS -->
+	<script src="../js/audio-player.js"></script>
 </body>
 </html>

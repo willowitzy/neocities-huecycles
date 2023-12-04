@@ -3,7 +3,7 @@ const audio = document.getElementById('audioplayer');
 const playButton = document.querySelector('.btn-play');
 const seekbar = document.querySelector('.progress-slider');
 const volButton = document.querySelector('.volume-button');
-const volContainer = document.querySelector('.volume-button');
+const volContainer = document.querySelector('.volume-container');
 
 function playPause() {
     if (audio.paused) {
@@ -29,13 +29,6 @@ audio.addEventListener('timeupdate', function() {
     let currentTime = formatTime(audio.currentTime);
     let totalDuration = formatTime(audio.duration);
     document.querySelector('.time-display').textContent = `${currentTime} / ${totalDuration}`;
-
-    // // Change play/pause symbol based on audio playback
-    // if (audio.paused) {
-    //     playButton.textContent = '>';
-    // } else {
-    //     playButton.textContent = '||';
-    // }
 });
 
 // Format time (mm:ss)
