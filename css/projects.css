@@ -105,7 +105,7 @@ main {
   padding: 0px;
 }
 
-/* Image hover effect */
+/* Image hover effect (for links) */
 a img.hover {
   display: none;
 }
@@ -118,6 +118,7 @@ a:hover img.hover {
 a:hover img.default {
   display: none;
 }
+
 
 footer {
   background-color: var(--background);;

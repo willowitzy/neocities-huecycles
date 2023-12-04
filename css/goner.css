@@ -6,3 +6,72 @@ body {
 	color: #00c000;
 	text-shadow: none;
 }
+
+body.goner-page {
+	background: black;
+    image-rendering: pixelated;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#text {
+    /* Centering the TV on the screen */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow {
+	color: #fff;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+from {
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #717171, 0 0 20px #717171, 0 0 25px #717171, 0 0 30px #717171, 0 0 35px #717171;
+	}
+	
+to {
+	text-shadow: 0 0 3px #fff, 0 0 6px #717171, 0 0 12px #717171, 0 0 24px #717171, 0 0 48px #717171, 0 0 70px #717171, 0 0 80px #717171;
+	}
+}
+  
+.to-animate {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 5vmax;
+	width: 5vmax;
+	transform-origin: center;
+}
+  
+.one {
+	-webkit-animation: ripple_large 2s linear 0s infinite;
+	animation: ripple_large 2s linear 0s infinite;
+}
+  
+.two {
+	-webkit-animation: ripple_large 2s linear 1s infinite;
+	animation: ripple_large 2s linear 1s infinite;
+	opacity: 0;
+}
+
+@keyframes ripple_large {
+	0% {
+	  transform: translate(-50%, -50%) scale(1);
+	  opacity: 0;
+	}
+	50% {
+	  transform: translate(-50%, -50%) scale(7);
+	  opacity: 0.15;
+	}
+	100% {
+	  transform: translate(-50%, -50%) scale(13);
+	  opacity: 0;
+	}
+}
