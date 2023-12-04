@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Candleholder</title>
-    <link rel="icon" type="image/png" href="../assets/img/candleholder/favicon.png"/>
-    <!-- CSS -->
-    <link href="../css/reset.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/base.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/projects.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/candleholder.css" rel="stylesheet" type="text/css" media="all"/>
-  </head>
-  <body>
-    <br>
-    <br>
-    <br>
-    <div class=wrapper>
-    <div class="flex-container">
-      <div><p style="text-align:center;">
-        <img class="image smooth" src="../assets/img/candleholder/char/risku_nael.png"/>
-        <br><span class="center by-text" style="margin-right: 10%;">by <a href="https://twitter.com/willowitzy">@willowitzy</a></span></p>
-      </div>
-      <div>
-        <h2>Risku</h2>
-        <font style="font-family:'8 Bit Operator'"><span style="color: #8e7575;">♥ (You joined the chatroom. Say hi!) ♥</span></font>
-        <br><br><font style="font-family:'8 Bit Operator'">♥ oh wait wait we have a newbiw ♥<br>♥ *newbie. FATASS fingers ♥<br>♥ glad youre keeping me
-          company bro lmao but ♥<br>♥ i'm kinda in the wrong groupchat here uh ♥<br>♥ ecoiewvhelpewdvbh sorry oops ♥</font>
-        <br><br><font style="font-family:'8 Bit Operator'"><span style="color: #8e7575;">♥ (Risku sent you an audio file.) ♥<br>♥ (Risku left...) ♥</span></font>
-        <br><br>
-        <audio controls>
-          <source src="../assets/audio/wanna_prank_call.ogg" type="audio/ogg">
-          Your browser does not support the audio element.
-        </audio>
-        </div></p>
-    </div>
-    <!-- End of .flex-container -->
-    <p class="center bold"><a href="../candleholder">RETURN</a></p>
-  </body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Candleholder</title>
+	<link rel="icon" type="image/png" href="../assets/img/candleholder/favicon.png"/>
+	<!-- CSS -->
+	<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/base.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/projects.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/candleholder.css" rel="stylesheet" type="text/css" media="all"/>
+	<!-- <link href="../css/characters.css" rel="stylesheet" type="text/css" media="all"/> -->
+</head>
+<body>
+	<div class=wrapper>
+		<h2 class="center character-name">Risku</h2>
+		<div class="flex-container">
+			<!-- Character -->
+			<div class="character-container">
+				<!-- Character Image -->
+				<img class="image smooth" src="../assets/img/candleholder/char/risku_nael.png"/>
+				<p class="center by-text">art by 
+					<a href="https://twitter.com/willowitzy">@willowitzy</a>
+				</p>
+				<audio class="character-audioplayer" controls preload="auto"> <!-- autoplay -->
+					<source src="../assets/audio/wanna_prank_call.ogg" type="audio/ogg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+
+			<!-- Main Content -->
+			<div class="flex-inner">
+
+				<!-- Dialogue Boxes -->
+				<div class="dialogueCH">
+					<span class="riskuline riskuspecial">(You joined the chatroom. Say hi!)</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="riskuline">oh wait wait we have a newbiw lol</span>
+					<br>
+					<span class="riskuline">*newbie... FATASS fingers</span>
+
+				</div>
+				<div class="dialogueCH">
+					<span class="riskuline">glad youre keeping me company bro lmao</span>
+					<br>
+					<span class="riskuline">but uh</span>
+					<br>
+					<span class="riskuline">i'm kinda in the wrong groupchat here</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="riskuline">ecoiewvhelpewdvbh sorry oops</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="riskuline riskuspecial">(Risku sent you an audio file.)</span>
+					<br>
+					<br>
+					<span class="riskuline riskuspecial">(Risku left...)</span>
+				</div>
+        	</div> <!-- End of .flex-inner -->
+		</div> <!-- .flex-container -->
+	</div> <!-- End of .wrapper -->
+
+	<!-- Return Button -->
+	<p class="center bold"><a href="../candleholder">RETURN</a></p>
+	<script src="../js/audio-player.js"></script>
+</body>
 </html>

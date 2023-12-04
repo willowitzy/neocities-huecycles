@@ -9,42 +9,6 @@ a {
     font-family: var(--font);
 }
 
-/* ---------- Dialogue Boxes ---------- */
-.dialogueCH {
-	text-align: left;
-	color: white;
-	/*background: black;*/
-	max-width: 640px;
-	min-height: 144px;
-	margin: auto;
-	font-family: var(--font);
-	padding: 0 8px;
-	/* padding: 0 8px; If no portrait */
-	border: 26px solid transparent;
-	border-image: url(../assets/img/CandleholderBorder.gif) 52 stretch;
-	image-rendering: pixelated;
-	border-image-slice: 27.3% fill;  
-}
-  
-.firstline, .normaline {
-    max-width: 640px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 34px;
-    min-height: 104px; /* Keeps Next Button in the corner */
-}
-
-.firstline::before {
-    content: "* ";
-
-}
-
-.normaline::before {
-    visibility: hidden;
-    content: "_";
-    padding: 10px;
-}
-
 /* ---------- Lancer Page ---------- */
 .lancer {
     margin: 5px 0;
@@ -73,20 +37,69 @@ a {
     /* Three items per row */
 }
 
-/* .dessholiday {} */
-
 /* ---------- Character Pages ---------- */
-
-/* .character-name {} */
-
 .character-container {
     display: flex;
     flex-direction: column;
-    /* Center children horizontally */
     align-items: center; 
-    /* Center children vertically */
     justify-content: center; 
 }
+
+/* ---------- Dialogue Boxes ---------- */
+.dialogueCH {
+	text-align: left;
+	color: white;
+	/*background: black;*/
+	max-width: 640px;
+	min-height: 144px;
+	margin: auto;
+	font-family: var(--font);
+	padding: 0 8px;
+	/* padding: 0 8px; If no portrait */
+	border: 26px solid transparent;
+	border-image: url(../assets/img/CandleholderBorder.gif) 52 stretch;
+	image-rendering: pixelated;
+	border-image-slice: 27.3% fill;  
+}
+
+/* ---------- General Text Styles ---------- */
+.firstline, .normaline, .riskuline {
+    max-width: 640px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    min-height: 104px; /* Keeps Next Button in the corner */
+}
+
+.firstline::before {
+    content: "* ";
+}
+
+.normaline::before {
+    visibility: hidden;
+    content: "_";
+    padding: 10px;
+}
+
+.flex-inner {
+    align-self: center;
+}
+
+/* ---------- Risku Text Unique Styles ---------- */
+
+.riskuline::before {
+    content: "♥ ";
+}
+
+.riskuline::after {
+    content: " ♥";
+}
+
+.riskuspecial {
+    color: #8e7575;
+}
+
+
 
 /* ---------- Social Icons ---------- */
 .social-links{
@@ -96,8 +109,15 @@ a {
     margin: 0 30%;
 }
 
-/* Selected Text */
-::selection { color:#ff8bbb; background:  #1b1b1b;}
+/* ---------- Other ---------- */
+::selection { color:#ff8bbb; background:  #1b1b1b;} /* Selected Text */
+
+:focus {
+    background-color: #333;
+    outline: 2px solid transparent;
+    outline-offset: 2px; 
+    transition: outline 0.3s;
+}
 
 /* ----------------------- Mobile compatibility ----------------------- */
 

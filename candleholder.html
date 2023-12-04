@@ -185,59 +185,59 @@
     <!-- JS toggle to swap animations after the user clicks the images -->
     <script>
 		// Ensures the script doesn't run until the HTML document has been fully loaded
-        document.addEventListener("DOMContentLoaded", function() {
+		document.addEventListener("DOMContentLoaded", function() {
 			var characterLink = document.getElementById("character-link");
 			var characterImg = document.getElementById("character-img");
 			var characterImgHover = document.getElementById("character-img-hover");
 
-        	// Check if the device is a touchscreen
+			// Check if the device is a touchscreen
 			var isTouchDevice = 'ontouchstart' in document.documentElement;
 			var isToggled = false;
 
-          	function toggleImages() {
-				var tempSrc = characterImg.src;
-				characterImg.src = characterImgHover.src;
-				characterImgHover.src = tempSrc;
-				isToggled = !isToggled;
-          	}
+			function toggleImages() {
+			var tempSrc = characterImg.src;
+			characterImg.src = characterImgHover.src;
+			characterImgHover.src = tempSrc;
+			isToggled = !isToggled;
+			}
 
 			// Click or touchstart event handler
 			function clickHandler(event) {
-				toggleImages();
+			toggleImages();
 
-				if (isTouchDevice) {
-					// Prevent default behavior on touch devices
-					event.preventDefault();
-				}
+			if (isTouchDevice) {
+				// Prevent default behavior on touch devices
+				event.preventDefault();
+			}
 			}
 
 			// Event listeners
 			if (isTouchDevice) {
-				console.log("Device uses touch.");
-				// For touch devices, 'touchstart' and 'pointerdown' events
-				characterLink.addEventListener("touchstart", clickHandler);
-				characterLink.addEventListener("pointerdown", function (event) {
-					// Check if the pointer is a touch input
-					if (event.pointerType === "touch") {
-						event.preventDefault();
-					}
-				});
+			console.log("Device uses touch.");
+			// For touch devices, 'touchstart' and 'pointerdown' events
+			characterLink.addEventListener("touchstart", clickHandler);
+			characterLink.addEventListener("pointerdown", function (event) {
+				// Check if the pointer is a touch input
+				if (event.pointerType === "touch") {
+				event.preventDefault();
+				}
+			});
 			} else { // PC
-				console.log("Device doesn't use touch.");
-				// For non-touch devices, 'click' and 'mouseenter' events
-				characterLink.addEventListener("click", clickHandler);
+			console.log("Device doesn't use touch.");
+			// For non-touch devices, 'click' and 'mouseenter' events
+			characterLink.addEventListener("click", clickHandler);
 
-				characterLink.addEventListener("mouseenter", function () {
-					// Toggle when hovering
-					if (isToggled) {
-						toggleImages();
-					}
-				});
+			characterLink.addEventListener("mouseenter", function () {
+				// Toggle when hovering
+				if (isToggled) {
+				toggleImages();
+				}
+			});
 
-				// Reset the toggle state on mouseleave
-				characterLink.addEventListener("mouseleave", function () {
-					isToggled = false;
-				});
+			// Reset the toggle state on mouseleave
+			characterLink.addEventListener("mouseleave", function () {
+				isToggled = false;
+			});
 			}
 		});
     </script>

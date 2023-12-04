@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Candleholder</title>
-    <link rel="icon" type="image/png" href="../assets/img/candleholder/favicon.png"/>
-    <!-- CSS -->
-    <link href="../css/reset.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/base.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/projects.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/candleholder.css" rel="stylesheet" type="text/css" media="all"/>
-  </head>
-  <body>
-    <br/>
-    <br/>
-    <br/>
-    <div class=wrapper>
-      <div class="flex-container">
-        <div>
-          <img class="image smooth" src="../assets/img/candleholder/char/jevil_nael.png"/>
-          <br/><span class="center by-text" style="margin-left: 23%;">by <a href="https://twitter.com/willowitzy">@willowitzy</a></span>
-        </div>
-        <div>
-          <h2>Jevil</h2>
-          <p class="bold">
-            * NU-HA!!! THIS IS QUITE AN UNFINISHED<br>STATE, NO?? WHAT A LOUSY, LOUSY JOB<br>THEY'VE MADE!
-          </p>
-          <p class="bold">
-            * OH, BUT SOON, THE LIGHT FROM ABOVE<br>RETURNS, AND THERE IS MUCH, MUCH FUN<br>TO BE HAD...!
-          </p>
-          <p class="bold">
-            * FOR NOW... A LOVELY SONG FROM THE<br>NEARBY CAROUSEL GREETS YOU!!
-          </p>
-          <br/>
-          <audio controls>
-            <source src="../assets/audio/jevil_jevil.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      </div>
-    <!-- End of .flex-container -->
-    <p class="center bold"><a href="../candleholder">RETURN</a></p>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Candleholder</title>
+<link rel="icon" type="image/png" href="../assets/img/candleholder/favicon.png"/>
+<!-- CSS -->
+<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="../css/base.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="../css/projects.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="../css/candleholder.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- <link href="../css/characters.css" rel="stylesheet" type="text/css" media="all"/> -->
+</head>
+<body>
+	<div class="wrapper">
+		<h2 class="center character-name">Jevil</h2>
+		<div class="flex-container">
+			<!-- Character -->
+			<div class="character-container">
+			<!-- Character Image -->
+			<img class="image smooth" src="../assets/img/candleholder/char/jevil_nael.png"/>
+			<p class="center by-text">art by 
+				<a href="https://twitter.com/willowitzy">@willowitzy</a>
+			</p>
+			<audio class="character-audioplayer" controls>
+				<source src="../assets/audio/jevil_jevil.mp3" type="audio/mpeg"/>
+				Your browser does not support the audio element.
+			</audio>
+			</div>
+
+			<!-- Main Content -->
+			<div class="flex-inner"> 
+
+				<!-- Dialogue Boxes -->
+				<div class="dialogueCH">
+					<span class="firstline">NU-HA!!! THIS IS QUITE AN UNFINISHED</span>
+					<br> 
+					<span class="normaline">STATE, NO?? WHAT A LOUSY, LOUSY JOB</span>
+					<br>
+					<span class="normaline">THEY'VE MADE!</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">OH, BUT SOON, THE LIGHT FROM ABOVE</span>
+					<br>
+					<span class="normaline">RETURNS, AND THERE IS MUCH, MUCH FUN</span>
+					<br>
+					<span class="normaline">TO BE HAD...!</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">FOR NOW... A LOVELY SONG FROM THE</span>
+					<br>
+					<span class="normaline">NEARBY CAROUSEL GREETS YOU!!</span>
+				</div> 
+			</div> <!-- End of .flex-inner -->
+		</div> <!-- End of .flex-container -->
+	</div> <!-- End of .wrapper -->
+
+	<!-- Return Button -->
+	<p class="center bold"><a href="../candleholder">RETURN</a></p>
+</body>
 </html>

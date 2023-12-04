@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Candleholder</title>
-    <link rel="icon" type="image/png" href="../assets/img/candleholder/favicon.png"/>
-    <!-- CSS -->
-    <link href="../css/reset.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/base.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/projects.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/candleholder.css" rel="stylesheet" type="text/css" media="all"/>
-  </head>
-  <body>
-    <br>
-    <br>
-    <br>
-    <div class=wrapper>
-    <div class="flex-container">
-      <div>
-        <img class="image smooth" src="../assets/img/candleholder/char/nataline_nael.png"/>
-        <br><span class="center by-text" style="margin-left: 16%;">by <a href="https://twitter.com/willowitzy">@willowitzy</a></span>
-      </div>
-      <div>
-        <h2>Nataline</h2>
-        <p class="bold">* O-OH! A-AN O-O-ONLOOKER...?</p>
-        <p class="bold">* C-C-CAREFUL NOW... THE G-GLASS<br>IS TOO F-F-FRAGILE...!!</p>
-        <p class="bold">* WAIT... Y-Y-YOU'RE N-NOT S-SUPPOSED<br>TO B-BE BACKSTAGE... H-HAVE YOU BROUGHT<br>M-M-ME A... HOLIDAY GIFT...?</p>
-        <p class="bold">* Y-YOUR PRESENCE. IT IS WARM...</p>
-        <br>
-        <audio controls>
-          <source src="../assets/audio/hiddenblizzard.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-        </div>
-    </div><!-- End of .flex-container -->
-    <p class="center bold"><a href="../candleholder">RETURN</a></p>
-  </body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Candleholder</title>
+	<link rel="icon" type="image/png" href="../assets/img/candleholder/favicon.png"/>
+	<!-- CSS -->
+	<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/base.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/projects.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/candleholder.css" rel="stylesheet" type="text/css" media="all"/>
+	<!-- <link href="../css/characters.css" rel="stylesheet" type="text/css" media="all"/> -->
+</head>
+<body>
+	<div class=wrapper>
+		<h2 class="center character-name">Nataline</h2>
+		<div class="flex-container">
+			<!-- Character -->
+			<div class="character-container">
+				<!-- Character Image -->
+				<img class="image smooth" src="../assets/img/candleholder/char/nataline_nael.png"/>
+				<p class="center by-text">art by 
+					<a href="https://twitter.com/willowitzy">@willowitzy</a>
+				</p>
+				<audio class="character-audioplayer" controls preload="auto"> <!-- autoplay -->
+					<source src="../assets/audio/hiddenblizzard.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+
+			<!-- Main Content -->
+			<div class="flex-inner">
+
+				<!-- Dialogue Boxes -->
+				<div class="dialogueCH">
+					<span class="firstline">O-OH! A-AN O-O-ONLOOKER...?</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">C-C-CAREFUL NOW... THE G-GLASS</span>
+					<br>
+					<span class="normaline">IS TOO F-F-FRAGILE...!!</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">WAIT... Y-Y-YOU'RE N-NOT S-SUPPOSED</span>
+					<br>
+					<span class="normaline">TO B-BE BACKSTAGE...</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline"> Y-YOU BROUGHT M-M-ME A... HOLIDAY GIFT...?</span>
+					<br>
+					<span class="normaline">Y-YOUR PRESENCE. IT IS WARM...</span>
+				</div>
+			</div> <!-- End of .flex-inner -->
+		</div> <!-- .flex-container -->
+	</div> <!-- End of .wrapper -->
+
+	<!-- Return Button -->
+	<p class="center bold"><a href="../candleholder">RETURN</a></p>
+</body>
 </html>
