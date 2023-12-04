@@ -21,7 +21,7 @@
 				<!-- Character Image -->
 				<img class="image smooth" src="../assets/img/candleholder/char/spamton_nael.png"/>
 				<p class="center by-text">art by 
-					<a href="https://twitter.com/willowitzy">@willowitzy</a>
+					<a href="https://twitter.com/willowitzy" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">@willowitzy</a>
 				</p>
 
 				<!-- Audio Player -->
@@ -32,7 +32,7 @@
 					</audio>
 
 					<!-- Play and Progress Bar -->
-					<button class="chara-audioplayer btn-play" type="button" onclick="playPause()">></button>
+					<button class="chara-audioplayer btn-play" type="button" onclick="playPause(); clickSoundLoad(event)" onmouseenter="hoverSound()">></button>
 					<input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
 
 					<!-- Time display -->
@@ -74,7 +74,7 @@
     </div> <!-- End of .wrapper -->
 
 	<!-- Return Button -->
-    <p class="center bold"><a href="../candleholder">RETURN</a></p>
+    <p class="center bold"><a href="../candleholder" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
 	
 	<!--
     <footer>
@@ -82,6 +82,8 @@
 	</footer>
 	-->
 
+	<!-- Click/Hover Sound JS -->
+	<script src="../js/soundfx.js"></script>
 	<!-- Audio Player JS -->
 	<script src="../js/audio-player.js"></script>
 </body>

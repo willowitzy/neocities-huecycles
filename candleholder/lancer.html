@@ -13,6 +13,8 @@
     <link href="../css/candleholder.css" rel="stylesheet"type="text/css" media="all"/>
   </head>
   <body>
+    <!-- Click/Hover Sound JS -->
+	  <script src="../js/soundfx.js"></script>
     <style></style>
     <br/>
     <br/>
@@ -24,28 +26,51 @@
     <div class="wrapper">
       <div class="flex-container">
         <div class="lancer">
-          <a href="../candleholder">
+          <a href="../candleholder" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
             <img class="default image pixelated" src="../assets/img/lancer.png" width="76" height="76"/>
             <img class="hover image pixelated" src="../assets/img/lancer_sleep.gif" width="76" height="76" alt="Click me to return!" title="Click me to return!"/>
           </a>
-          <div class="lancer dialogue">
-            <p class="bold">
-              * Hey, clowns!! I'm still waiting to wear my nightly get-up!
-            </p>
-            <p class="bold">
-              * For now, I'll snooze to mp3's in this dark,<br/>spacious void
-              of a page...
-            </p>
+          <div class="dialogueCH">
+            <span class="firstline">Hey, clowns!! I'm still waiting</span>
+            <br>
+            <span class="normaline">to wear my nightly get-up!</span>
           </div>
-          <audio controls>
-            <source src="../assets/audio/sleepy_lancer.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
+          <div class="dialogueCH">
+            <span class="firstline">For now, I'll snooze to mp3's</span>
+            <br>
+            <span class="normaline">in this dark, spacious void</span>
+            <br>
+            <span class="normaline">of a page...</span>
+            <br>
+          </div>
+          <!-- Audio Player -->
+          <div class="audioplayer-container"> 
+            <audio id="audioplayer"> <!-- preload="none" -->
+              <source src="../assets/audio/sleepy_lancer.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+
+            <!-- Play and Progress Bar -->
+            <button class="chara-audioplayer btn-play" type="button" onclick="playPause(); clickSoundLoad(event)" onmouseenter="hoverSound()">></button>
+            <input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
+
+            <!-- Time display -->
+            <span class="time-display">0:00 / 1:10</span>
+
+            <!-- Volume -->
+            <div class="volume-container">
+              <!-- Volume Buttons (+/-) -->
+              <button class="chara-audioplayer btn-vol vol-down" type="button" onclick="decreaseVolume()">-</button>
+              <button class="chara-audioplayer btn-vol vol-up" type="button" onclick="increaseVolume()">+</button>
+            </div>
+          </div>
         </div>
         <!-- End of .lancer -->
       </div>
       <!-- End of .flex-container -->
     </div>
     <!-- End of .wrapper -->
+    <!-- Audio Player JS -->
+	  <script src="../js/audio-player.js"></script>
   </body>
 </html>

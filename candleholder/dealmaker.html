@@ -13,6 +13,8 @@
   <link href="../css/characters.css" rel="stylesheet" type="text/css" media="all"/>    
 </head>
 <body>
+	<!-- Click/Hover Sound JS -->
+	<script src="../js/soundfx.js"></script>
 	<div class=wrapper>
 	<h2 class="center character-name">Dealmaker</h2>
 	<div class="flex-container">
@@ -21,7 +23,7 @@
 			<!-- Character Image -->
 			<img class="image smooth" src="../assets/img/candleholder/char/dm_nael.png"/>
 			<p class="center by-text" style="margin-left: 30%;">art by 
-				<a href="https://twitter.com/willowitzy">@willowitzy</a>
+				<a href="https://twitter.com/willowitzy" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">@willowitzy</a>
 			</p>
 
 			<!-- Audio Player -->
@@ -32,7 +34,7 @@
 				</audio>
 
 				<!-- Play and Progress Bar -->
-				<button class="chara-audioplayer btn-play" type="button" onclick="playPause()">></button>
+				<button class="chara-audioplayer btn-play" type="button" onclick="playPause(); clickSoundLoad(event)" onmouseenter="hoverSound()">></button>
 				<input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
 
 				<!-- Time display -->
@@ -52,7 +54,7 @@
 
 			<!-- Dialogue Boxes -->
 			<div class="dialogueCH">
-				<span class="firstline">* HEY YOU!!! MY PAGE IS STILL <img src="../assets/img/dealmaker/under-construction.gif" width="40" height="40" style="vertical-align:bottom"/>!!</span>
+				<span class="firstline">HEY YOU!!! MY PAGE IS STILL <img src="../assets/img/dealmaker/under-construction.gif" width="40" height="40" style="vertical-align:bottom"/>!!</span>
 			</div>
 			<div class="dialogueCH">
 				<span class="firstline">DON'T WORRY!!! THE FACTORY FOLKS</span>
@@ -69,7 +71,7 @@
 </div> <!-- End of .wrapper -->
 
 	<!-- Return Button -->
-	<p class="center bold"><a href="../candleholder">RETURN</a></p>
+	<p class="center bold"><a href="../candleholder" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
 
 	<!-- Audio Player JS -->
 	<script src="../js/audio-player.js"></script>

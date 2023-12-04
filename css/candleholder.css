@@ -17,6 +17,7 @@ a {
 .lancer p {
     margin-top: 20px;
 }
+
 .lancer p:nth-child(2) {
     margin-bottom: 30px;
 }
