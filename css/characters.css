@@ -7,3 +7,7 @@ body {
 section {
     display: none;
 }
+
+.wrapper {
+    width: 1500px;
+}
