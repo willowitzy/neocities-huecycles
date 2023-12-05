@@ -16,23 +16,11 @@
     <img class="to-animate two image pixelated" src="assets/img/candleholder/neodoor.png"></div>
   </head>
   <body class="notfound-page">
-    <audio id="dooropen">
-      <source src="assets/audio/dooropen.wav"></source>
-      Your browser does not support the audio element.
-    </audio>
-    <!--<audio autoplay loop>
+    <audio autoplay loop>
       <source src="assets/audio/AUDIO_DRONE.ogg" type="audio/ogg">
       Your browser does not support the audio element.
-    </audio>-->
+    </audio>
     <script>
-      var door = document.querySelector('#notfound-text') 
-      var audio = document.querySelector('#dooropen')
-      door.addEventListener("mouseenter", function(){
-        audio.play()
-      });
-      door.addEventListener("mouseout", function(){
-        audio.pause()
-      });
         var urlArray = [
         "../8158/prophecy",
         "../8158/missing",
