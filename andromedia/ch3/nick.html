@@ -12,34 +12,76 @@
     <link href="../../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body class="nick-page">
-    <br>
-    <br>
-    <br>
     <div class=wrapper>
     <div class="flex-container">
-    <div><p style="text-align:center;">
-    <video position="absolute" width="414" height="380" autoplay loop muted>
-        <source src="../../assets/video/nick.mp4" type="video/mp4"/>
-    </video></p>
-    <p style="text-align:center;">
-    <audio controls>
-        <source src="../../assets/audio/nick_kris.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-    </audio></p></div>
-    <div>
-        <p class="bold">* Oh, Kriiiis... I remeeeember when you were this piiint-sized little human!</p>
-        <br><br>
-        <p class="bold">* I remeeeember your games with your brother, how you'd worry your mother over another bathbooomb down the toileeet...</p>
-        <br><br>
-        <p class="bold">* Even your silly praaanks, hehe!! What a daaaredevil, yooou!</p>
-        <br><br>
-        <p class="bold">* But mooost of all, I remeeember your songs! Ah, your looovely songs!</p>
-        <br><br>
-        <p class="bold">* Hmmm? You don't plaaay anymore...?</p>
-        <br><br>
-        <p class="bold">* Ah... Quite a shaaame. Maybe I could help you in case you're rustyyy! Would you liiike to tryyy~?</p>
-        <br><br></div>
-    </div>
-    <p class="center bold"><a href="../ch3">RETURN</a></p>
+      <p class="center">
+      <video position="absolute" width="414" height="380" autoplay loop muted>
+          <source src="../../assets/video/nick.mp4" type="video/mp4"/>
+      </video></p></div>
+        <div class="dialogueDW">
+          <span class="firstline">Oh, Kriiiis... I remeeeember when you</span>
+          <br>
+          <span class="normaline">were this piiint-sized little human!</span>
+        </div>
+        <div class="dialogueDW">
+          <span class="firstline">I remeeeember your games with your</span>
+          <br>
+          <span class="normaline">brother...</span>
+        </div>
+        <div class="dialogueDW">
+          <span class="firstline">How you'd worry your mother over</span>
+          <br>
+          <span class="normaline">another bathbooomb down the toileeet...</span>
+        </div>
+        <div class="dialogueDW">
+          <span class="firstline">Even your silly praaanks, hehe!!</span>
+          <br>
+          <span class="firstline">What a daaaredevil, yooou!</span>
+        </div>
+        <div class="dialogueDW">
+          <span class="firstline">But mooost of all, I remeeember your</span>
+          <br>
+          <span class="normaline">songs! Ah, your looovely songs!</span>
+        </div>
+        <div class="dialogueDW">
+          <span class="firstline">Hmmm? You don't plaaay anymore...?</span>
+        </div>
+        <div class="dialogueDW">
+          <span class="firstline">Ah... Quite a shaaame. Maybe I could help</span>
+          <br>
+          <span class="normaline">you in case you're rustyyy!</span>
+        </div>
+        <div class="dialogueDW">
+          <span class="firstline">Would you liiike to tryyy~?</span>
+        </div>
+        <div class="wrappernick"> 
+          <!-- Audio Player -->
+          <div class="audioplayer-container"> 
+            <audio id="audioplayer"> <!-- preload="none" -->
+              <source src="../../assets/audio/nick_kris.ogg" type="audio/ogg">
+              Your browser does not support the audio element.
+            </audio>
+
+            <!-- Play and Progress Bar -->
+            <button class="chara-audioplayer btn-play" type="button" onclick="playPause(); clickSoundLoad(event)" onmouseenter="hoverSound()">▶</button>
+            <input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
+
+            <!-- Time display -->
+            <span class="time-display">0:00 / 1:48</span>
+
+            <!-- Volume -->
+            <div class="volume-container">
+              <!-- Volume Buttons (+/-) -->
+              <button class="chara-audioplayer btn-vol vol-down" type="button" onclick="decreaseVolume()">-</button>
+              <button class="chara-audioplayer btn-vol vol-up" type="button" onclick="increaseVolume()">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <p class="center bold"><a href="../ch3" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
+    <!-- Audio Player JS -->
+	  <script src="../../js/audio-player.js"></script>
+    <!-- Click/Hover Sound JS -->
+    <script src="../../js/soundfx.js"></script>
 </body>
 </html>
