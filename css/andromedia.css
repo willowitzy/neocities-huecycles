@@ -64,9 +64,37 @@ a {
 	min-height: 104px; /* Keeps Next Button in the corner */
 }
 
+/* ---------- General Text Styles ---------- */
+.firstline, .normaline {
+    max-width: 640px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    min-height: 104px; /* Keeps Next Button in the corner */
+}
+
+.firstline::before {
+    content: "* ";
+}
+
+.normaline::before {
+    visibility: hidden;
+    content: "_";
+    padding: 10px;
+}
+
 /* ------------ NICK STYLES ------------ */
 body.nick-page {
-	background-color: #0c0b14;
+	background-color: #000000;
+	font-family: var(--font);
+}
+
+/* For the audio player */
+.wrappernick {
+	width: 400px;
+	/*border: 3px solid black;*/
+	margin: 0 auto;
+	top: 0px;
 }
 
 /* ------------ HALOJACK STYLES ------------ */
