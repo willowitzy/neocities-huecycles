@@ -303,6 +303,13 @@ body.standby-page {
 	font-family: "Deltarune";
 }
 
+.minerva-redacted {
+	background-color: #333;
+	color: #333;
+	text-shadow: none;
+	user-select: none;
+}
+
 .flex-item {
     display: flex;
     max-width: 100%; /* Make images responsive */

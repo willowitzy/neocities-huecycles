@@ -14,11 +14,13 @@ var html5_audiotypes={ //define list of audio file extensions and their associat
 //Initialize two sound clips with 1 fallback file each:
 var mouseoversound=createsoundbite(
 	"./assets/audio/ui_move.wav", "./assets/audio/ui_move.ogg", 	// <-- Path relative to the root level
-	"../assets/audio/ui_move.wav", "../assets/audio/ui_move.ogg" 	// <-- Path relative to subfolders
+	"../assets/audio/ui_move.wav", "../assets/audio/ui_move.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/ui_move.wav", "../../assets/audio/ui_move.ogg" 	// <-- Path relative to sub-subfolders
 );
 var clicksound=createsoundbite(
 	"./assets/audio/ui_select.wav", "./assets/audio/ui_select.ogg",
-	"../assets/audio/ui_select.wav", "../assets/audio/ui_select.ogg"
+	"../assets/audio/ui_select.wav", "../assets/audio/ui_select.ogg",
+	"../../assets/audio/ui_select.wav", "../../assets/audio/ui_select.ogg"
 );
 
 var domInteracted = false;
