@@ -7,8 +7,18 @@ body {
 	text-shadow: none;
 }
 
-.gonertext {
-    text-shadow: 0 0 10px #afafaf;
+.gonertext h2 {
+	color:#060606;
+	text-align: center;
+	user-select: none;
+}
+
+.wdtext {
+	font-family: "wingdings";
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: none;
 }
 
 /* Glowing effect on text */
@@ -61,4 +71,43 @@ to {
 	  transform: translate(-50%, -50%) scale(13);
 	  opacity: 0;
 	}
+}
+
+#fade_in {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
