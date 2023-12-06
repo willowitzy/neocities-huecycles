@@ -8,6 +8,8 @@ body {
 a {
   color: var(--link-default);
   text-decoration: none;
+  color: var(--link-alt);
+	font-family: var(--font);
 }
 
 a:hover {
