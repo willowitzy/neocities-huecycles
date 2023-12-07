@@ -19,6 +19,18 @@
   <body>
     <!-- Click/Hover Sound JS -->
 		<script src="../js/soundfx.js"></script>
+		<script>
+			var urlArray = [
+			"../andromedia/ch3/signal",
+			"../andromedia/ch3/halojack"
+			];
+		
+			function randomUrl() {
+				var randomNumber = Math.floor(Math.random() * urlArray.length);
+				var newUrl = urlArray[randomNumber];
+				window.location.href = newUrl;
+			}
+		</script>
 
     <div class=wrapper>
   
@@ -60,7 +72,7 @@
 				</div>
 				<!-- Halojack -->
 				<div class="flex-item">
-					<a class= "halojack" href="./ch3/halojack" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+					<a class= "halojack" href="javascript:randomUrl()" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
 						<img class="default image pixelated halojack" src="../assets/img/andromedia/ch3/halojack.png">
 						<img class="hover image pixelated halojack" src="../assets/img/andromedia/ch3/halojack_2.gif"/>
 						<p class="center">Halojack</p>
