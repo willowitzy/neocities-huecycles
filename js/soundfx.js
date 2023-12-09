@@ -20,7 +20,12 @@ var mouseoversound=createsoundbite(
 var clicksound=createsoundbite(
 	"./assets/audio/ui_select.wav", "./assets/audio/ui_select.ogg",
 	"../assets/audio/ui_select.wav", "../assets/audio/ui_select.ogg",
-	"../../assets/audio/ui_select.wav", "../../assets/audio/ui_select.ogg"
+	"../../assets/audio/ui_select.wav", "../../assets/audio/ui_select.ogg",
+);
+var clickdenysound=createsoundbite(
+	"./assets/audio/ui_cant_select.wav", "./assets/audio/ui_cant_select.ogg",
+	"../assets/audio/ui_cant_select.wav", "../assets/audio/ui_cant_select.ogg",
+	"../../assets/audio/ui_cant_select.wav", "../../assets/audio/ui_cant_select.ogg"
 );
 
 var domInteracted = false;
@@ -35,6 +40,10 @@ mouseoversound.addEventListener('ended', function () {
   
 clicksound.addEventListener('ended', function () {
 	console.log('Click sound ended');
+});
+
+clickdenysound.addEventListener('ended', function () {
+	console.log('Click deny sound ended');
 });
 
 function createsoundbite(sound) {
@@ -71,6 +80,11 @@ function hoverSound() {
 // Call this function in the onclick event
 function clickSound() {
 	clicksound.playclip();
+}
+
+// Call this function in the onclick event (when you can't select something)
+function clickDenySound() {
+	clickdenysound.playclip();
 }
 
 // Call this function in the onclick event of an anchor
