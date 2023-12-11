@@ -39,7 +39,7 @@ body {
 
 .container {
     width: 500px;
-    max-width: 80%;
+    max-width: 800px;
     padding: 1rem;
     border: 3px solid lightgrey;
     border-radius: 5px;
@@ -51,11 +51,6 @@ body {
 
 .container .footer{
     text-align: left;
-}
-
-#banner {
-    max-width: 100%;
-    object-fit: contain;
 }
 
 .active, .collapsible:hover {
@@ -112,4 +107,11 @@ body {
 
 .content .comments {
     padding: 1% 3%;
+}
+
+/* ----------------------- Mobile compatibility ----------------------- */
+@media (max-width: 790px) {
+    .hplays {
+        max-width: 100%;
+    }
 }

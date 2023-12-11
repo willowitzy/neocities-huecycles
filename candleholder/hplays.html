@@ -348,14 +348,14 @@
 					<small>Posted at 6:66 PM</small>
 					<button type="button" class="collapsible"><small>Comments (1)</small></button>
 
-						<!-- Comments -->	
-						<div class="content">
-							<div class="author">
-								<a class="disabled">shockerbreakerII</a>
-								<div class="timestamp">At 6:53 PM</div>
-							</div>
-							<p class="comments">What about "Dawn"? It's what came to mind randomly haha</p>
+					<!-- Comments -->	
+					<div class="content">
+						<div class="author">
+							<a class="disabled">shockerbreakerII</a>
+							<div class="timestamp">At 6:53 PM</div>
 						</div>
+						<p class="comments">What about "Dawn"? It's what came to mind randomly haha</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -369,15 +369,15 @@
 		var i;
 
 		for (i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var content = this.nextElementSibling;
-		if (content.style.display === "block") {
-		content.style.display = "none";
-		} else {
-		content.style.display = "block";
-		}
-		});
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
 		}
 	</script>
 </body>
