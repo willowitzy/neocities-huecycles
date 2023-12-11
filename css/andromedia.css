@@ -442,3 +442,13 @@ body.standby-page {
 .vol-up {
     margin-right: 5px;
 }
+
+/* ---------- Other ---------- */
+::selection { color:#ffff00; background:  #333;} /* Selected Text */
+
+:focus {
+    background-color: #333;
+    outline: 2px solid transparent;
+    outline-offset: 2px; 
+    transition: outline 0.3s;
+}
