@@ -1,14 +1,26 @@
 /* Dess Blog */
 
-#hplays {
-    font-family: "Arial", Arial, sans-serif;
-    width: 100%;    text-align: center;
-    color: #ffffff;
+:root {
+    --background: #2A2F33;
+    --text: #ffffff;
+    --text-hover: #929292;
+}
+
+/* Reset box model */
+* {
+    box-sizing: border-box;
+}
+
+.hplays {
+    font-family: "Arial", Arial, sans-serif; 
+    text-align: center;
+    color: var(--text);
+    margin: 5%;
 }
 
 a {
     text-decoration: underline;
-    color: white;
+    color: var(--text);
 }
 
 a:hover {
@@ -22,29 +34,23 @@ body {
 
 .wrapper {
     width: 1000px;
-    /*border: 3px solid black;*/
     margin: 0 auto;
-    top: 0px;
 }
 
 .container {
-    width: 462px;
+    width: 500px;
     max-width: 80%;
     padding: 1rem;
     border: 3px solid lightgrey;
     border-radius: 5px;
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+    margin: 0 auto;
     text-align: left;
-    background: #2A2F33;
+    background: var(--background);
     font-size: 13px;
 }
 
 .container .footer{
     text-align: left;
-    background: #2A2F33;
 }
 
 #banner {
@@ -58,6 +64,7 @@ body {
   
 .content {
     display: none;
+    font-size: 12px;
     overflow: hidden;
     background-color: #202428;
     text-align: left;
@@ -66,7 +73,7 @@ body {
 
 .content .author {
     background: #777;
-    padding: 15px 18px;
+    padding: 1% 3%;
     text-decoration: underline;
     font-size: 14px;
     color: #ffffff;
@@ -74,10 +81,8 @@ body {
 
 .content .dess {
     background: #777;
-    padding: 0px 18px;
-    height: 35px;
+    padding: 1% 3%;
     margin-bottom: 20px;
-    font-size: 14px;
     color: #ffffff;
 }
 
@@ -106,5 +111,5 @@ body {
 }
 
 .content .comments {
-    padding: 15px 18px;
+    padding: 1% 3%;
 }
