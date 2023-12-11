@@ -20,6 +20,10 @@ body {
     max-width: 800px;
 }
 
+.pixelated {
+    image-rendering: pixelated;
+}
+
 h1, h2, h3 {
     font-family: "Georgia",
     Georgia, serif; 
