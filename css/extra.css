@@ -1,9 +1,12 @@
 /* Dess Blog */
 
 :root {
-    --background: #2A2F33;
+    --content-background: #2A2F33;
     --text: #ffffff;
     --text-hover: #929292;
+    --comment-lightgrey: #777;
+    --comment-grey: #202428;
+    --borders: lightgrey;
 }
 
 /* Reset box model */
@@ -23,10 +26,6 @@ a {
     color: var(--text);
 }
 
-a:hover {
-    color: #929292;
-}
-
 body {
     background: #000000;
     background-image: url("../assets/img/hplays/bg_fire.png");
@@ -35,33 +34,30 @@ body {
 .wrapper {
     width: 1000px;
     margin: 0 auto;
+    max-width: 100%;
+    top: 0px;
 }
 
 .container {
     width: 500px;
-    max-width: 800px;
     padding: 1rem;
-    border: 3px solid lightgrey;
+    border: 3px solid var(--borders);
     border-radius: 5px;
     margin: 0 auto;
     text-align: left;
-    background: var(--background);
+    background: var(--content-background);
     font-size: 13px;
 }
 
 .container .footer{
     text-align: left;
 }
-
-.active, .collapsible:hover {
-    background-color: #777;
-}
   
 .content {
     display: none;
     font-size: 12px;
     overflow: hidden;
-    background-color: #202428;
+    background-color: var(--comment-grey);
     text-align: left;
     line-height: 20px;
 }
@@ -71,30 +67,26 @@ body {
     padding: 1% 3%;
     text-decoration: underline;
     font-size: 14px;
-    color: #ffffff;
+    color: var(--text);
 }
 
 .content .dess {
     background: #777;
     padding: 1% 3%;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: var(--text);
 }
 
 .content .author .timestamp {
     float: right;
     font-size: small;
-    color: #ffffff;
-}
-
-.content .author:hover {
-    color: #00005e;
+    color: var(--text);
 }
 
 .content .author a {
     text-decoration: underline;
     font-size: 14px;
-    color: #ffffff;
+    color: var(--text);
 }
 
 .content .author a:hover {
@@ -109,9 +101,35 @@ body {
     padding: 1% 3%;
 }
 
+/* ---------- Collapsible ---------- */
+.collapsible {
+    margin-bottom: 5px;
+}
+
+.collapsible:active { /* <-- This happens only once when the element is clicked */
+    background-color: #777; 
+}
+
+/* .active, .collapsible:hover {
+    background-color: #777;
+} */
+
 /* ----------------------- Mobile compatibility ----------------------- */
 @media (max-width: 790px) {
-    .hplays {
-        max-width: 100%;
+    .wrapper {
+        width: 100%;
+        padding: 1em;
+        margin: 0;
+    }
+
+    .container {
+        font-size: 3vw; /* Changing font for better readability */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
     }
 }
