@@ -386,7 +386,7 @@ function createComment(data) {
     let comment = document.createElement('div');
 
     // Get the right timestamps
-    let timestamps = convertTimestamp(data.Timestamp);
+    let timestamps = convertTimestamp(data['Carimbo de data/hora']);
     let timestamp;
     if (s_longTimestamp) {timestamp = timestamps[0]}
     else {timestamp = timestamps[1]}
