@@ -220,6 +220,7 @@ function getComments() {
 
     // Do stuff with the data here
     retrievedSheet.then(result => {
+        console.log(result);
         // The data comes with extra stuff at the beginning, get rid of it
         const json = JSON.parse(result.split('\n')[1].replace(/google.visualization.Query.setResponse\(|\);/g, ''));
 
@@ -440,6 +441,7 @@ function createComment(data) {
 
 // Makes the Google Sheet timestamp usable
 function convertTimestamp(timestamp) {
+    console.log("Timestamp:", timestamp);
     const vals = timestamp.split('(')[1].split(')')[0].split(',');
     const date = new Date(vals[0], vals[1], vals[2], vals[3], vals[4], vals[5]);
     const timezoneDiff = (s_timezone * 60 + date.getTimezoneOffset()) * -1;
