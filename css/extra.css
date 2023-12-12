@@ -114,6 +114,82 @@ body {
     background-color: #777;
 } */
 
+/* ----------- Player ------------ */
+.music { text-align: left; }
+
+.really-player {
+    position: relative;
+    display: inline-block;
+    font-family: 'Arial', Arial, sans-serif;
+    height: 50px;
+    width: 250px;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background: #333333;
+    background: linear-gradient(180deg, #333 0%, rgb(74, 74, 74) 28%, #262626 50%, #171717 70%, black 100%);
+}
+
+.really-player audio { display: none; }
+
+.really-player .volume {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    width: 58%;
+}
+
+.really-player .volume-icon {
+    position: absolute;
+    top: 13px;
+    left: 60px;
+    height: 24px;
+    width: 24px;
+    opacity: 0.8;
+}
+
+.really-player .play-button {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+    background: none;
+    box-shadow: inset 0 0 4px #434343, 0 0 8px #434343;
+    border: 1px solid #232323;
+}
+
+.really-player .play-button::before {
+    content: "◀︎";
+    transform: rotate(180deg);
+    position: absolute;
+    pointer-events: none;
+    left: 11px;
+    top: 4px;
+    font-size: 24px;
+}
+
+.really-player .play-button:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 8px #434343, 0 0 12px #434343;
+    color: grey;
+}
+
+.really-player .play-button:active {
+    color: black;
+    background: grey;
+}
+
+.really-player.playing .play-button::before {
+    content: "=";
+    transform: rotate(90deg);
+    font-size: 32px;
+    font-weight: bold;
+    left: 11px;
+    top: 1px;
+}
+
 /* ----------------------- Mobile compatibility ----------------------- */
 @media (max-width: 790px) {
     .wrapper {
