@@ -208,9 +208,11 @@ function getComments() {
     c_replyInput.value = '';
 
     // Clear input fields too
-    document.getElementById(`entry.${s_nameId}`).value = '';
-    document.getElementById(`entry.${s_websiteId}`).value = '';
-    document.getElementById(`entry.${s_textId}`).value = '';
+    if (s_commentsOpen) {
+        document.getElementById(`entry.${s_nameId}`).value = '';
+        document.getElementById(`entry.${s_websiteId}`).value = '';
+        document.getElementById(`entry.${s_textId}`).value = '';
+    }
 
     // Get the data
     const url = `https://docs.google.com/spreadsheets/d/${s_sheetId}/gviz/tq?`;
