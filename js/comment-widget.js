@@ -18,13 +18,13 @@
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
 const s_stylePath = '../css/comment-widget-pink.css';
-const s_formId = '1FAIpQLSdOfC6Hv2m8pzDGi3F6PIrNexwC1U-jhOks-Do9MHomnyLnBw';
-const s_nameId = '738369933';
-const s_websiteId = '1631160841';
-const s_textId = '571606822';
-const s_pageId = '209946979';
-const s_replyId = '694812919';
-const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
+const s_formId = '1FAIpQLSe7U8RZ9NJ_RAzPUjnWhM5-P1M8uLFyEoRc4arHVpfpmQ-ISQ';
+const s_nameId = '1574810085';
+const s_websiteId = '1221656940';
+const s_textId = '657279615';
+const s_pageId = '1266696391';
+const s_replyId = '1532271513';
+const s_sheetId = '1emD1Q4lsbUGR9m6BfCzPugrMDq_EIJ4gwl_pIHUZ4W8';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -3; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -37,7 +37,7 @@ const s_dstEnd = ['November', 'Sunday', 1, 2]; // Example shown is the first Sun
 const s_commentsPerPage = 5; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
 const s_maxLength = 500; // The max character length of a comment
 const s_maxLengthName = 16; // The max character length of a name
-const s_commentsOpen = false; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
+const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
 const s_collapsedReplies = true; // True for collapsed replies with a button, false for replies to display automatically
 const s_longTimestamp = false; // True for a date + time, false for just the date
 let s_includeUrlParameters = false; // Makes new comment sections on pages with URL parameters when set to true (If you don't know what this does, leave it disabled)
@@ -47,29 +47,8 @@ const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make
 const s_wordFilterOn = true; // True for on, false for off
 const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'faggot',
-    'whore',
-    'dyke',
-    'retard',
-    'nigger',
-    'nigga',
-    'fag',
-    'lolicon',
-    'shota',
-    'shotacon',
-    'nazi',
-    'nazism',
-    'hitler',
-    'rape',
-    'shemale',
-    'trannie',
-    'tranny',
-    'zoophilia',
-    'zoophile',
-    'pedophile',
-    'pedophilia',
-    'futanari',
-    'incest',
+    'faggot', 'whore', 'dyke', 'retard', 'nigger', 'nigga', 'fag', 'lolicon', 'shota', 'shotacon', 'nazi', 'nazism',
+    'hitler', 'rape', 'shemale', 'trannie', 'tranny', 'zoophilia', 'zoophile', 'pedophile', 'pedophilia', 'futanari', 'incest',
 ]
 
 const s_noelle = true
